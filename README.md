@@ -19,6 +19,7 @@ DHOW1: Derick K. Howard https://github.com/DHOW1
 
 ## 🚀 Usage
 
+Functionallity with manual expense logs. If you have a better solution for updating the expense .csvs faster, we will pay you!
 
 ## ⬇️ Setup Installation
 
