@@ -1,4 +1,4 @@
 pandas
 sentence-transformers
 faiss-cpu
-``` faiss-gpu # requires NVIDIA gpu ```
+# faiss-gpu # requires NVIDIA gpu
