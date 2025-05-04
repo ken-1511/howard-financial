@@ -20,6 +20,14 @@ DHOW1: Derick K. Howard https://github.com/DHOW1
 ## 🚀 Usage
 
 
-## ⬇️ Installation
+## ⬇️ Setup Installation
+
+To run this project, you need to install the required Python libraries.
+We provide a `requirements.txt` file that lists all dependencies. You can install everything automatically using `pip`, which is Python’s package installer.
+
+Run this command in your terminal after cloning in:
+
+```bash
+pip install -r requirements.txt
 
 ## 💭 Feedback and Contributing
