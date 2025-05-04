@@ -33,4 +33,4 @@ pip install -r requirements.txt
 ```
 ## 💭 Feedback and Contributing
 
-reach out on linkedin: [Ken Howard Profile](https://www.linkedin.com/in/ken-howard11/)
+Reach out on LinkedIn.com: [Ken Howard Profile](https://www.linkedin.com/in/ken-howard11/)
