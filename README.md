@@ -29,5 +29,5 @@ Run this command in your terminal after cloning in:
 
 ```bash
 pip install -r requirements.txt
-
+```
 ## 💭 Feedback and Contributing
