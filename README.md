@@ -32,3 +32,5 @@ Run this command in your terminal after cloning in:
 pip install -r requirements.txt
 ```
 ## 💭 Feedback and Contributing
+
+reach out on linkedin: [Ken Howard Profile](https://www.linkedin.com/in/ken-howard11/)
