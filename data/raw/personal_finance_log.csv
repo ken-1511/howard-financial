@@ -1,0 +1,103 @@
+Dollars,Date,Account,Type,Category,Vendor,Tags
+($775.00),4/1/2025,USAA S,expense,Rent,6640 Pasado,
+($11.00),4/1/2025,USAA C,expense,Food,Coral Tree,Eating out
+($5.99),4/2/2025,USAA C,expense,Subscription,Spotify,
+($5.30),4/3/2025,USAA C,expense,Parking,UCSB,
+$83.99 ,4/7/2025,USAA C,reimburstment,Lodging,SLO hotel,
+$100.00 ,4/7/2025,USAA C,transfer,,,
+($4.00),4/7/2025,USAA C,expense,Parking,UCSB,
+($17.19),4/7/2025,USAA C,expense,Food,Hummus Republic,Eating out
+($36.64),4/7/2025,USAA C,expense,Fuel,Costco,
+($54.62),4/7/2025,USAA C,expense,Clothing,State Street,Second hand
+($75.77),4/8/2025,USAA C,expense,Health,Wisdom Teeth,Financing
+($7.80),4/8/2025,USAA C,expense,Food,Hot dog stand,"Eating out, Fast food"
+($9.00),4/8/2025,USAA C,expense,Food,Blenders,Eating out
+$240.26 ,4/8/2025,USAA C,income,Job,DREAM Lab,
+($179.00),4/2/2025,USAA S,expense,Transportation,Registration,Green Machine
+($44.00),4/4/2025,USAA S,transfer,,,
+($987.00),4/7/2025,USAA S,transfer,,,
+($100.00),4/7/2025,USAA S,transfer,,,
+$60.06 ,4/8/2025,USAA S,income,Job,DREAM Lab,
+($200.00),4/9/2025,USAA S,transfer,,,
+($100.00),4/14/2025,USAA S,transfer,,,
+($138.57),4/14/2025,USAA S,transfer,,,
+($298.00),4/14/2025,USAA S,expense,Transportation,Registration,Kia Niro
+($300.00),4/14/2025,USAA S,transfer,,,
+($269.00),4/15/2025,USAA S,transfer,,,
+($48.00),4/16/2025,USAA S,expense,Parking,UCSB,Ticket
+($33.00),4/16/2025,USAA S,transfer,,,
+($775.00),4/16/2025,USAA S,transfer,,,
+$100.00 ,4/16/2025,USAA S,transfer,,,
+$200.00 ,4/9/2025,USAA C,transfer,,,
+($7.59),4/9/2025,USAA C,expense,Food,Costco,"Eating out, Fast food"
+($22.00),4/9/2025,USAA C,expense,Utilities,Wifi,
+($22.88),4/9/2025,USAA C,expense,Food ,Corazon Cocina,
+($99.83),4/9/2025,USAA C,expense,Food,Costco,Yosemite
+($8.70),4/10/2025,USAA C,expense,Food,Cucas,"Eating out, Fast food"
+($8.70),4/10/2025,USAA C,expense,Food,Cucas,"Eating out, Fast food"
+($12.56),4/10/2025,USAA C,expense,Food,Chipotle,"Eating out, Fast food"
+($13.32),4/10/2025,USAA C,expense,Entertainment,Camino Real Cinema,Minecraft Movie
+($30.02),4/10/2025,USAA C,expense,Transportation,Costco,Yosemite
+($31.36),4/10/2025,USAA C,expense,Transportation,Fuel Depot,Yosemite
+$43.42 ,4/11/2025,USAA C,reimburstment,Other,Venmo,
+($8.92),4/11/2025,USAA C,expense,Wellness,North Fork Market,Yosemite
+($38.22),4/11/2025,USAA C,expense,Utilities,Electricity,
+$35.00 ,4/14/2025,USAA C,reimburstment,Wellness,Sephora,
+$100.00 ,4/14/2025,USAA C,transfer,,,
+$115.00 ,4/14/2025,USAA C,reimburstment,Food,Hot pot,Eating out
+$138.57 ,4/14/2025,USAA C,transfer,,,
+$300.00 ,4/14/2025,USAA C,transfer,,,
+($8.37),4/14/2025,USAA C,expense,Food,Convenience store,"Yosemite, Beverage"
+($17.23),4/14/2025,USAA C,expense,Food,Pizza,"Yosemite, Eating out, Fast food"
+($35.00),4/14/2025,USAA C,expense,Entertainment,Yosemite Park Access,Yosemite
+($50.25),4/14/2025,USAA C,expense,Transportation,Sinclair,Yosemite
+($115.61),4/14/2025,USAA C,expense,Food,Hot Pot,
+($123.84),4/14/2025,USAA C,expense,Wellness,Sephora,
+($129.60),4/14/2025,USAA C,expense,Clothing,J Crew,
+($242.69),4/14/2025,USAA C,expense,Clothing,JC Penney,Charcoal suit
+$269.00 ,4/15/2025,USAA C,transfer,,,
+($8.70),4/15/2025,USAA C,expense,Food,Cucas,"Eating out, Fast food"
+($15.00),4/15/2025,USAA C,expense,Other,Lauren Studios Photos,Graduation
+($16.31),4/15/2025,USAA C,expense,Food,Dean Coffee,"Eating out, Beverage"
+($2.53),4/15/2025,USAA C,expense,Food,In-n-Out,"Eating out, Fast food"
+$33.00 ,4/16/2025,USAA C,transfer,,,
+($12.00),4/16/2025,USAA C,expense,Transportation,Car wash,
+$775.00 ,4/16/2025,USAA C,transfer,,,
+($100.00),4/16/2025,USAA C,transfer,,,
+($13.05),4/15/2025,USAA C,expense,Food,Dean Coffee,Eating out
+($95.00),4/15/2025,USAA C,expense,Clothing,Alpha Thrift,Second hand
+($220.00),4/15/2025,USAA C,expense,Clothing,Ding Tailoring,Charcoal suit
+($49.00),4/15/2025,USAA C,expense,Clothing,Ding Tailoring,
+($2.53),4/16/2025,USAA C,expense,Food,In-n-Out,"Eating out, Fast food"
+($12.00),4/17/2025,USAA C,expense,Transportation,Car wash,
+($14.36),4/17/2025,USAA C,expense,Clothing,Uniqlo,
+($18.71),4/18/2025,USAA C,expense,Food,Thai,Eating out
+($27.48),4/18/2025,USAA C,expense,Food,Chicken Guy,"Eating out, Fast food"
+($55.14),4/18/2025,USAA C,expense,Clothing,Zara,
+($9.50),4/21/2025,USAA C,expense,Food,UCSB Concessions,"Eating out, Fast food"
+($47.50),4/21/2025,USAA C,expense,Wellness,Richies Barbershop,
+($23.91),4/21/2025,USAA C,expense,Other,Albertsons Propane,
+($73.22),4/21/2025,USAA C,expense,Wellness,Target,
+($68.00),4/21/2025,USAA C,expense,CBD/THC,Farmacy,
+($21.01),4/21/2025,USAA C,expense,Food,Zocalo,"Eating out, Fast food"
+($11.63),4/21/2025,USAA C,expense,Food,Yoshinoya,"Eating out, Fast food"
+"$1,004.00 ",4/21/2025,USAA S,income,Tax return,,
+($4.03),4/22/2025,USAA C,expense,Food,IV Deli,"Eating out, Beverage"
+($6.39),4/22/2025,USAA C,expense,Food,Woodstocks,"Eating out, Fast food"
+($6.53),4/22/2025,USAA C,expense,Food,Lao's,"Eating out, Fast food"
+($11.63),4/22/2025,USAA C,expense,Food,Courtyard,Eating out
+$16.00 ,4/23/2025,USAA C,reimburstment,Other,Ben A,Yosemite
+($10.88),4/23/2025,USAA C,expense,Food,Panda Express,"Eating out, Fast food "
+($27.06),4/23/2025,USAA C,expense,Food,Kyles Kitchen,"Eating out, Fast food"
+($47.09),4/23/2025,USAA C,expense,Transportation,Fuel Depot,
+($49.03),4/23/2025,USAA C,expense,Food,Costco,Groceries
+($9.98),4/25/2025,USAA C,expense,Wellness,Target,
+($25.43),4/25/2025,USAA C,expense,Transportation,ARCO,
+($46.00),4/25/2025,USAA C,expense,Entertainment,Anela,Yosemite
+($83.25),4/25/2025,USAA C,withdrawal,Cash,,Bike
+($3.00),4/25/2025,USAA C,expense,Parking,State Street,
+($13.00),4/25/2025,USAA C,expense,Utilities,Electricity,
+($23.57),4/25/2025,USAA C,expense,Food,Caje,"Eating out, Beverage"
+($46.00),4/28/2025,USAA C,expense,Error,Anela,
+($4.30),4/28/2025,USAA C,expense,Parking,UCSB,
+($15.00),4/28/2025,USAA C,expense,Entertainment,UCSB Alumni Weekend,Networking
