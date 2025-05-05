@@ -10,7 +10,7 @@
 
 ## ℹ️ Overview
 
-My name is Darrin Kenneth Howard (Ken-1511) and the vision for this project is a collaboration with Derick Howard (DHOW1). Ultimately, I am the source of the dataset used presently, but we hope to expand the reach of accounts that we track and evaluate. More plainly, we plan to integrate expense reports from secondary accounts, Derick's main account, David's business accounts, and finally all other personal accounts.
+My name is Darrin K. Howard (Ken-1511) and the vision for this project is a collaboration with Derick Howard (DHOW1). Ultimately, I am the source of the dataset used presently, but we hope to expand the reach of accounts that we track and evaluate. More plainly, we plan to integrate expense reports from secondary accounts, Derick's main account, David's business accounts, and finally all other personal accounts.
 
 ### ✍️ Authors
 
