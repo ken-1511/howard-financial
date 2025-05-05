@@ -1,38 +1,56 @@
 import pandas as pd
-# retrieves .csv at a specified location and ensures that small features of the data entry
-# are accounted for in the structure presented to the agentic workflow
+
+# Loads and cleans a personal finance CSV for analysis.
+# This ensures the data is structured, cleaned, and normalized for downstream workflows.
 def load_and_clean(path: str) -> pd.DataFrame:
     """
-    Phase 1 – Read the raw export and return a tidy DataFrame.
-    • Ensures 'Date' is datetime.
-    • Converts the money column to signed floats (parentheses → negative).
-    • Trims / lower-cases the text columns.
+    Phase 1 – Load the raw export and return a tidy DataFrame.
+    
+    Steps:
+    - Reads in the CSV file.
+    - Ensures 'Date' is a proper datetime (malformed dates become NaT).
+    - Converts the 'Dollars' column to signed floats (handles negatives via parentheses).
+    - Normalizes key text columns (e.g., lowercasing, stripping spaces) for consistency.
     """
-    # ── 1. ingest ----------------------------------------------------------------
-    raw = pd.read_csv(path, header=0, engine="python")      # tweak header/skiprows if needed
+    # ── 1. Load (Ingest) the Raw Data --------------------------------------------
+    # "Ingest" means reading raw data from the file system into a DataFrame.
+    # We use header=0 (first row is header) and engine="python" for flexible parsing.
+    raw = pd.read_csv(path, header=0, engine="python")
 
-    # ── 2. normalize header names ------------------------------------------------
+    # ── 2. Normalize Column Headers ----------------------------------------------
+    # Standardize header names: remove extra spaces and unify spacing within names.
+    # For example: "  Vendor Name  " → "Vendor Name"
     raw.columns = (raw.columns
                      .str.strip()
-                     .str.replace(r"\s+", " ", regex=True))   # collapse doubled spaces
+                     .str.replace(r"\s+", " ", regex=True))  # collapse multiple spaces
 
-    # ── 3. make sure 'Date' exists and convert -----------------------------------
+    # ── 3. Validate and Parse 'Date' Column --------------------------------------
+    # Ensure the 'Date' column exists and convert it to datetime format.
+    # Invalid dates (e.g., typos) will be converted to NaT (Not a Time) using errors="coerce".
     if "Date" not in raw.columns:
         raise ValueError(f"Expected 'Date' column, got {list(raw.columns)}")
-    raw["Date"] = pd.to_datetime(raw["Date"], format="%m/%d/%Y")
+    raw["Date"] = pd.to_datetime(
+        raw["Date"],
+        format="%m/%d/%Y",
+        errors="coerce"  # prevents failure on bad dates; replaces them with NaT
+    )
 
-    # ── 4. dollars → float (handle parens as negatives) --------------------------
+    # ── 4. Convert 'Dollars' to Numeric Amounts ----------------------------------
+    # Remove $ signs, commas, and parentheses, then convert to float.
+    # Parentheses are used in finance to indicate negatives (e.g., ($500) → -500).
     tx = raw.copy()
     tx["Amount"] = (tx["Dollars"].astype(str)
-                                .str.replace(r"[,$]", "", regex=True)   # strip $ and commas
-                                .str.replace(r"[()]", "", regex=True)   # drop parens
+                                .str.replace(r"[,$]", "", regex=True)   # remove $ and commas
+                                .str.replace(r"[()]", "", regex=True)   # remove parentheses
                                 .astype(float))
     neg_mask = raw["Dollars"].astype(str).str.contains(r"\(")
     tx.loc[neg_mask, "Amount"] *= -1
 
-    # ── 5. tidy the string columns ----------------------------------------------
+    # ── 5. Clean Up String Columns -----------------------------------------------
+    # Standardize text fields for consistency: strip leading/trailing spaces and lowercase.
+    # Applies to: Account, Type, Category, Vendor, Tags.
     for col in ["Account", "Type", "Category", "Vendor", "Tags"]:
         if col in tx.columns:
             tx[col] = tx[col].fillna("").str.strip().str.lower()
-            
+
     return tx

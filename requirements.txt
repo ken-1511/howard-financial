@@ -1,4 +1,7 @@
 pandas
 sentence-transformers
 faiss-cpu
-# faiss-gpu # requires NVIDIA gpu
+scikit-learn
+tqdm
+ipywidgets
+# faiss-gpu  # (requires NVIDIA GPU)
