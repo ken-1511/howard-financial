@@ -1,103 +1,103 @@
 text,Dollars,Date,Account,Type,Category,Vendor,Tags,Amount,weekday,is_weekend,is_fixed
-"On 2025-04-01, you spent $775.00 at 6640 pasado (Category: rent) using usaa s. ",($775.00),2025-04-01,usaa s,expense,rent,6640 pasado,,775.0,Tuesday,False,True
-"On 2025-04-01, you spent $11.00 at coral tree (Category: food) using usaa c. (tags: eating out)",($11.00),2025-04-01,usaa c,expense,food,coral tree,eating out,11.0,Tuesday,False,False
-"On 2025-04-02, you spent $5.99 at spotify (Category: subscription) using usaa c. ",($5.99),2025-04-02,usaa c,expense,subscription,spotify,,5.99,Wednesday,False,True
-"On 2025-04-03, you spent $5.30 at ucsb (Category: parking) using usaa c. ",($5.30),2025-04-03,usaa c,expense,parking,ucsb,,5.3,Thursday,False,False
-"On 2025-04-07, a transaction of $83.99 occurred at slo hotel (Type: reimburstment, Category: lodging) using usaa c. ",$83.99 ,2025-04-07,usaa c,reimburstment,lodging,slo hotel,,-83.99,Monday,False,False
-"On 2025-04-07, $100.00 was transferred involving  (Category: ) from usaa c. ",$100.00 ,2025-04-07,usaa c,transfer,,,,-100.0,Monday,False,False
-"On 2025-04-07, you spent $4.00 at ucsb (Category: parking) using usaa c. ",($4.00),2025-04-07,usaa c,expense,parking,ucsb,,4.0,Monday,False,False
-"On 2025-04-07, you spent $17.19 at hummus republic (Category: food) using usaa c. (tags: eating out)",($17.19),2025-04-07,usaa c,expense,food,hummus republic,eating out,17.19,Monday,False,False
-"On 2025-04-07, you spent $36.64 at costco (Category: fuel) using usaa c. ",($36.64),2025-04-07,usaa c,expense,fuel,costco,,36.64,Monday,False,False
-"On 2025-04-07, you spent $54.62 at state street (Category: clothing) using usaa c. (tags: second hand)",($54.62),2025-04-07,usaa c,expense,clothing,state street,second hand,54.62,Monday,False,False
-"On 2025-04-08, you spent $75.77 at wisdom teeth (Category: health) using usaa c. (tags: financing)",($75.77),2025-04-08,usaa c,expense,health,wisdom teeth,financing,75.77,Tuesday,False,False
-"On 2025-04-08, you spent $7.80 at hot dog stand (Category: food) using usaa c. (tags: eating out, fast food)",($7.80),2025-04-08,usaa c,expense,food,hot dog stand,"eating out, fast food",7.8,Tuesday,False,False
-"On 2025-04-08, you spent $9.00 at blenders (Category: food) using usaa c. (tags: eating out)",($9.00),2025-04-08,usaa c,expense,food,blenders,eating out,9.0,Tuesday,False,False
-"On 2025-04-08, you received an income of $240.26 from dream lab (Category: job) into usaa c. ",$240.26 ,2025-04-08,usaa c,income,job,dream lab,,-240.26,Tuesday,False,False
-"On 2025-04-02, you spent $179.00 at registration (Category: transportation) using usaa s. (tags: green machine)",($179.00),2025-04-02,usaa s,expense,transportation,registration,green machine,179.0,Wednesday,False,False
+"On 2025-04-01, you spent $775.00 at 6640 pasado (Category: rent) using usaa s. ",($775.00),2025-04-01,usaa s,expense,rent,6640 pasado,,-775.0,Tuesday,False,True
+"On 2025-04-01, you spent $11.00 at coral tree (Category: food) using usaa c. (tags: eating out)",($11.00),2025-04-01,usaa c,expense,food,coral tree,eating out,-11.0,Tuesday,False,False
+"On 2025-04-02, you spent $5.99 at spotify (Category: subscription) using usaa c. ",($5.99),2025-04-02,usaa c,expense,subscription,spotify,,-5.99,Wednesday,False,True
+"On 2025-04-03, you spent $5.30 at ucsb (Category: parking) using usaa c. ",($5.30),2025-04-03,usaa c,expense,parking,ucsb,,-5.3,Thursday,False,False
+"On 2025-04-07, a transaction of $83.99 occurred at slo hotel (Type: reimburstment, Category: lodging) using usaa c. ",$83.99 ,2025-04-07,usaa c,reimburstment,lodging,slo hotel,,83.99,Monday,False,False
+"On 2025-04-07, $100.00 was transferred involving  (Category: ) from usaa c. ",$100.00 ,2025-04-07,usaa c,transfer,,,,100.0,Monday,False,False
+"On 2025-04-07, you spent $4.00 at ucsb (Category: parking) using usaa c. ",($4.00),2025-04-07,usaa c,expense,parking,ucsb,,-4.0,Monday,False,False
+"On 2025-04-07, you spent $17.19 at hummus republic (Category: food) using usaa c. (tags: eating out)",($17.19),2025-04-07,usaa c,expense,food,hummus republic,eating out,-17.19,Monday,False,False
+"On 2025-04-07, you spent $36.64 at costco (Category: fuel) using usaa c. ",($36.64),2025-04-07,usaa c,expense,fuel,costco,,-36.64,Monday,False,False
+"On 2025-04-07, you spent $54.62 at state street (Category: clothing) using usaa c. (tags: second hand)",($54.62),2025-04-07,usaa c,expense,clothing,state street,second hand,-54.62,Monday,False,False
+"On 2025-04-08, you spent $75.77 at wisdom teeth (Category: health) using usaa c. (tags: financing)",($75.77),2025-04-08,usaa c,expense,health,wisdom teeth,financing,-75.77,Tuesday,False,False
+"On 2025-04-08, you spent $7.80 at hot dog stand (Category: food) using usaa c. (tags: eating out, fast food)",($7.80),2025-04-08,usaa c,expense,food,hot dog stand,"eating out, fast food",-7.8,Tuesday,False,False
+"On 2025-04-08, you spent $9.00 at blenders (Category: food) using usaa c. (tags: eating out)",($9.00),2025-04-08,usaa c,expense,food,blenders,eating out,-9.0,Tuesday,False,False
+"On 2025-04-08, you received an income of $240.26 from dream lab (Category: job) into usaa c. ",$240.26 ,2025-04-08,usaa c,income,job,dream lab,,240.26,Tuesday,False,False
+"On 2025-04-02, you spent $179.00 at registration (Category: transportation) using usaa s. (tags: green machine)",($179.00),2025-04-02,usaa s,expense,transportation,registration,green machine,-179.0,Wednesday,False,False
 "On 2025-04-04, $44.00 was transferred involving  (Category: ) from usaa s. ",($44.00),2025-04-04,usaa s,transfer,,,,44.0,Friday,False,False
 "On 2025-04-07, $987.00 was transferred involving  (Category: ) from usaa s. ",($987.00),2025-04-07,usaa s,transfer,,,,987.0,Monday,False,False
 "On 2025-04-07, $100.00 was transferred involving  (Category: ) from usaa s. ",($100.00),2025-04-07,usaa s,transfer,,,,100.0,Monday,False,False
-"On 2025-04-08, you received an income of $60.06 from dream lab (Category: job) into usaa s. ",$60.06 ,2025-04-08,usaa s,income,job,dream lab,,-60.06,Tuesday,False,False
+"On 2025-04-08, you received an income of $60.06 from dream lab (Category: job) into usaa s. ",$60.06 ,2025-04-08,usaa s,income,job,dream lab,,60.06,Tuesday,False,False
 "On 2025-04-09, $200.00 was transferred involving  (Category: ) from usaa s. ",($200.00),2025-04-09,usaa s,transfer,,,,200.0,Wednesday,False,False
 "On 2025-04-14, $100.00 was transferred involving  (Category: ) from usaa s. ",($100.00),2025-04-14,usaa s,transfer,,,,100.0,Monday,False,False
 "On 2025-04-14, $138.57 was transferred involving  (Category: ) from usaa s. ",($138.57),2025-04-14,usaa s,transfer,,,,138.57,Monday,False,False
-"On 2025-04-14, you spent $298.00 at registration (Category: transportation) using usaa s. (tags: kia niro)",($298.00),2025-04-14,usaa s,expense,transportation,registration,kia niro,298.0,Monday,False,False
+"On 2025-04-14, you spent $298.00 at registration (Category: transportation) using usaa s. (tags: kia niro)",($298.00),2025-04-14,usaa s,expense,transportation,registration,kia niro,-298.0,Monday,False,False
 "On 2025-04-14, $300.00 was transferred involving  (Category: ) from usaa s. ",($300.00),2025-04-14,usaa s,transfer,,,,300.0,Monday,False,False
 "On 2025-04-15, $269.00 was transferred involving  (Category: ) from usaa s. ",($269.00),2025-04-15,usaa s,transfer,,,,269.0,Tuesday,False,False
-"On 2025-04-16, you spent $48.00 at ucsb (Category: parking) using usaa s. (tags: ticket)",($48.00),2025-04-16,usaa s,expense,parking,ucsb,ticket,48.0,Wednesday,False,False
+"On 2025-04-16, you spent $48.00 at ucsb (Category: parking) using usaa s. (tags: ticket)",($48.00),2025-04-16,usaa s,expense,parking,ucsb,ticket,-48.0,Wednesday,False,False
 "On 2025-04-16, $33.00 was transferred involving  (Category: ) from usaa s. ",($33.00),2025-04-16,usaa s,transfer,,,,33.0,Wednesday,False,False
 "On 2025-04-16, $775.00 was transferred involving  (Category: ) from usaa s. ",($775.00),2025-04-16,usaa s,transfer,,,,775.0,Wednesday,False,False
-"On 2025-04-16, $100.00 was transferred involving  (Category: ) from usaa s. ",$100.00 ,2025-04-16,usaa s,transfer,,,,-100.0,Wednesday,False,False
-"On 2025-04-09, $200.00 was transferred involving  (Category: ) from usaa c. ",$200.00 ,2025-04-09,usaa c,transfer,,,,-200.0,Wednesday,False,False
-"On 2025-04-09, you spent $7.59 at costco (Category: food) using usaa c. (tags: eating out, fast food)",($7.59),2025-04-09,usaa c,expense,food,costco,"eating out, fast food",7.59,Wednesday,False,False
-"On 2025-04-09, you spent $22.00 at wifi (Category: utilities) using usaa c. ",($22.00),2025-04-09,usaa c,expense,utilities,wifi,,22.0,Wednesday,False,False
-"On 2025-04-09, you spent $22.88 at corazon cocina (Category: food) using usaa c. ",($22.88),2025-04-09,usaa c,expense,food,corazon cocina,,22.88,Wednesday,False,False
-"On 2025-04-09, you spent $99.83 at costco (Category: food) using usaa c. (tags: yosemite)",($99.83),2025-04-09,usaa c,expense,food,costco,yosemite,99.83,Wednesday,False,False
-"On 2025-04-10, you spent $8.70 at cucas (Category: food) using usaa c. (tags: eating out, fast food)",($8.70),2025-04-10,usaa c,expense,food,cucas,"eating out, fast food",8.7,Thursday,False,False
-"On 2025-04-10, you spent $8.70 at cucas (Category: food) using usaa c. (tags: eating out, fast food)",($8.70),2025-04-10,usaa c,expense,food,cucas,"eating out, fast food",8.7,Thursday,False,False
-"On 2025-04-10, you spent $12.56 at chipotle (Category: food) using usaa c. (tags: eating out, fast food)",($12.56),2025-04-10,usaa c,expense,food,chipotle,"eating out, fast food",12.56,Thursday,False,False
-"On 2025-04-10, you spent $13.32 at camino real cinema (Category: entertainment) using usaa c. (tags: minecraft movie)",($13.32),2025-04-10,usaa c,expense,entertainment,camino real cinema,minecraft movie,13.32,Thursday,False,False
-"On 2025-04-10, you spent $30.02 at costco (Category: transportation) using usaa c. (tags: yosemite)",($30.02),2025-04-10,usaa c,expense,transportation,costco,yosemite,30.02,Thursday,False,False
-"On 2025-04-10, you spent $31.36 at fuel depot (Category: transportation) using usaa c. (tags: yosemite)",($31.36),2025-04-10,usaa c,expense,transportation,fuel depot,yosemite,31.36,Thursday,False,False
-"On 2025-04-11, a transaction of $43.42 occurred at venmo (Type: reimburstment, Category: other) using usaa c. ",$43.42 ,2025-04-11,usaa c,reimburstment,other,venmo,,-43.42,Friday,False,False
-"On 2025-04-11, you spent $8.92 at north fork market (Category: wellness) using usaa c. (tags: yosemite)",($8.92),2025-04-11,usaa c,expense,wellness,north fork market,yosemite,8.92,Friday,False,False
-"On 2025-04-11, you spent $38.22 at electricity (Category: utilities) using usaa c. ",($38.22),2025-04-11,usaa c,expense,utilities,electricity,,38.22,Friday,False,False
-"On 2025-04-14, a transaction of $35.00 occurred at sephora (Type: reimburstment, Category: wellness) using usaa c. ",$35.00 ,2025-04-14,usaa c,reimburstment,wellness,sephora,,-35.0,Monday,False,False
-"On 2025-04-14, $100.00 was transferred involving  (Category: ) from usaa c. ",$100.00 ,2025-04-14,usaa c,transfer,,,,-100.0,Monday,False,False
-"On 2025-04-14, a transaction of $115.00 occurred at hot pot (Type: reimburstment, Category: food) using usaa c. (tags: eating out)",$115.00 ,2025-04-14,usaa c,reimburstment,food,hot pot,eating out,-115.0,Monday,False,False
-"On 2025-04-14, $138.57 was transferred involving  (Category: ) from usaa c. ",$138.57 ,2025-04-14,usaa c,transfer,,,,-138.57,Monday,False,False
-"On 2025-04-14, $300.00 was transferred involving  (Category: ) from usaa c. ",$300.00 ,2025-04-14,usaa c,transfer,,,,-300.0,Monday,False,False
-"On 2025-04-14, you spent $8.37 at convenience store (Category: food) using usaa c. (tags: yosemite, beverage)",($8.37),2025-04-14,usaa c,expense,food,convenience store,"yosemite, beverage",8.37,Monday,False,False
-"On 2025-04-14, you spent $17.23 at pizza (Category: food) using usaa c. (tags: yosemite, eating out, fast food)",($17.23),2025-04-14,usaa c,expense,food,pizza,"yosemite, eating out, fast food",17.23,Monday,False,False
-"On 2025-04-14, you spent $35.00 at yosemite park access (Category: entertainment) using usaa c. (tags: yosemite)",($35.00),2025-04-14,usaa c,expense,entertainment,yosemite park access,yosemite,35.0,Monday,False,False
-"On 2025-04-14, you spent $50.25 at sinclair (Category: transportation) using usaa c. (tags: yosemite)",($50.25),2025-04-14,usaa c,expense,transportation,sinclair,yosemite,50.25,Monday,False,False
-"On 2025-04-14, you spent $115.61 at hot pot (Category: food) using usaa c. ",($115.61),2025-04-14,usaa c,expense,food,hot pot,,115.61,Monday,False,False
-"On 2025-04-14, you spent $123.84 at sephora (Category: wellness) using usaa c. ",($123.84),2025-04-14,usaa c,expense,wellness,sephora,,123.84,Monday,False,False
-"On 2025-04-14, you spent $129.60 at j crew (Category: clothing) using usaa c. ",($129.60),2025-04-14,usaa c,expense,clothing,j crew,,129.6,Monday,False,False
-"On 2025-04-14, you spent $242.69 at jc penney (Category: clothing) using usaa c. (tags: charcoal suit)",($242.69),2025-04-14,usaa c,expense,clothing,jc penney,charcoal suit,242.69,Monday,False,False
-"On 2025-04-15, $269.00 was transferred involving  (Category: ) from usaa c. ",$269.00 ,2025-04-15,usaa c,transfer,,,,-269.0,Tuesday,False,False
-"On 2025-04-15, you spent $8.70 at cucas (Category: food) using usaa c. (tags: eating out, fast food)",($8.70),2025-04-15,usaa c,expense,food,cucas,"eating out, fast food",8.7,Tuesday,False,False
-"On 2025-04-15, you spent $15.00 at lauren studios photos (Category: other) using usaa c. (tags: graduation)",($15.00),2025-04-15,usaa c,expense,other,lauren studios photos,graduation,15.0,Tuesday,False,False
-"On 2025-04-15, you spent $16.31 at dean coffee (Category: food) using usaa c. (tags: eating out, beverage)",($16.31),2025-04-15,usaa c,expense,food,dean coffee,"eating out, beverage",16.31,Tuesday,False,False
-"On 2025-04-15, you spent $2.53 at in-n-out (Category: food) using usaa c. (tags: eating out, fast food)",($2.53),2025-04-15,usaa c,expense,food,in-n-out,"eating out, fast food",2.53,Tuesday,False,False
-"On 2025-04-16, $33.00 was transferred involving  (Category: ) from usaa c. ",$33.00 ,2025-04-16,usaa c,transfer,,,,-33.0,Wednesday,False,False
-"On 2025-04-16, you spent $12.00 at car wash (Category: transportation) using usaa c. ",($12.00),2025-04-16,usaa c,expense,transportation,car wash,,12.0,Wednesday,False,False
-"On 2025-04-16, $775.00 was transferred involving  (Category: ) from usaa c. ",$775.00 ,2025-04-16,usaa c,transfer,,,,-775.0,Wednesday,False,False
+"On 2025-04-16, $100.00 was transferred involving  (Category: ) from usaa s. ",$100.00 ,2025-04-16,usaa s,transfer,,,,100.0,Wednesday,False,False
+"On 2025-04-09, $200.00 was transferred involving  (Category: ) from usaa c. ",$200.00 ,2025-04-09,usaa c,transfer,,,,200.0,Wednesday,False,False
+"On 2025-04-09, you spent $7.59 at costco (Category: food) using usaa c. (tags: eating out, fast food)",($7.59),2025-04-09,usaa c,expense,food,costco,"eating out, fast food",-7.59,Wednesday,False,False
+"On 2025-04-09, you spent $22.00 at wifi (Category: utilities) using usaa c. ",($22.00),2025-04-09,usaa c,expense,utilities,wifi,,-22.0,Wednesday,False,False
+"On 2025-04-09, you spent $22.88 at corazon cocina (Category: food) using usaa c. ",($22.88),2025-04-09,usaa c,expense,food,corazon cocina,,-22.88,Wednesday,False,False
+"On 2025-04-09, you spent $99.83 at costco (Category: food) using usaa c. (tags: yosemite)",($99.83),2025-04-09,usaa c,expense,food,costco,yosemite,-99.83,Wednesday,False,False
+"On 2025-04-10, you spent $8.70 at cucas (Category: food) using usaa c. (tags: eating out, fast food)",($8.70),2025-04-10,usaa c,expense,food,cucas,"eating out, fast food",-8.7,Thursday,False,False
+"On 2025-04-10, you spent $8.70 at cucas (Category: food) using usaa c. (tags: eating out, fast food)",($8.70),2025-04-10,usaa c,expense,food,cucas,"eating out, fast food",-8.7,Thursday,False,False
+"On 2025-04-10, you spent $12.56 at chipotle (Category: food) using usaa c. (tags: eating out, fast food)",($12.56),2025-04-10,usaa c,expense,food,chipotle,"eating out, fast food",-12.56,Thursday,False,False
+"On 2025-04-10, you spent $13.32 at camino real cinema (Category: entertainment) using usaa c. (tags: minecraft movie)",($13.32),2025-04-10,usaa c,expense,entertainment,camino real cinema,minecraft movie,-13.32,Thursday,False,False
+"On 2025-04-10, you spent $30.02 at costco (Category: transportation) using usaa c. (tags: yosemite)",($30.02),2025-04-10,usaa c,expense,transportation,costco,yosemite,-30.02,Thursday,False,False
+"On 2025-04-10, you spent $31.36 at fuel depot (Category: transportation) using usaa c. (tags: yosemite)",($31.36),2025-04-10,usaa c,expense,transportation,fuel depot,yosemite,-31.36,Thursday,False,False
+"On 2025-04-11, a transaction of $43.42 occurred at venmo (Type: reimburstment, Category: other) using usaa c. ",$43.42 ,2025-04-11,usaa c,reimburstment,other,venmo,,43.42,Friday,False,False
+"On 2025-04-11, you spent $8.92 at north fork market (Category: wellness) using usaa c. (tags: yosemite)",($8.92),2025-04-11,usaa c,expense,wellness,north fork market,yosemite,-8.92,Friday,False,False
+"On 2025-04-11, you spent $38.22 at electricity (Category: utilities) using usaa c. ",($38.22),2025-04-11,usaa c,expense,utilities,electricity,,-38.22,Friday,False,False
+"On 2025-04-14, a transaction of $35.00 occurred at sephora (Type: reimburstment, Category: wellness) using usaa c. ",$35.00 ,2025-04-14,usaa c,reimburstment,wellness,sephora,,35.0,Monday,False,False
+"On 2025-04-14, $100.00 was transferred involving  (Category: ) from usaa c. ",$100.00 ,2025-04-14,usaa c,transfer,,,,100.0,Monday,False,False
+"On 2025-04-14, a transaction of $115.00 occurred at hot pot (Type: reimburstment, Category: food) using usaa c. (tags: eating out)",$115.00 ,2025-04-14,usaa c,reimburstment,food,hot pot,eating out,115.0,Monday,False,False
+"On 2025-04-14, $138.57 was transferred involving  (Category: ) from usaa c. ",$138.57 ,2025-04-14,usaa c,transfer,,,,138.57,Monday,False,False
+"On 2025-04-14, $300.00 was transferred involving  (Category: ) from usaa c. ",$300.00 ,2025-04-14,usaa c,transfer,,,,300.0,Monday,False,False
+"On 2025-04-14, you spent $8.37 at convenience store (Category: food) using usaa c. (tags: yosemite, beverage)",($8.37),2025-04-14,usaa c,expense,food,convenience store,"yosemite, beverage",-8.37,Monday,False,False
+"On 2025-04-14, you spent $17.23 at pizza (Category: food) using usaa c. (tags: yosemite, eating out, fast food)",($17.23),2025-04-14,usaa c,expense,food,pizza,"yosemite, eating out, fast food",-17.23,Monday,False,False
+"On 2025-04-14, you spent $35.00 at yosemite park access (Category: entertainment) using usaa c. (tags: yosemite)",($35.00),2025-04-14,usaa c,expense,entertainment,yosemite park access,yosemite,-35.0,Monday,False,False
+"On 2025-04-14, you spent $50.25 at sinclair (Category: transportation) using usaa c. (tags: yosemite)",($50.25),2025-04-14,usaa c,expense,transportation,sinclair,yosemite,-50.25,Monday,False,False
+"On 2025-04-14, you spent $115.61 at hot pot (Category: food) using usaa c. ",($115.61),2025-04-14,usaa c,expense,food,hot pot,,-115.61,Monday,False,False
+"On 2025-04-14, you spent $123.84 at sephora (Category: wellness) using usaa c. ",($123.84),2025-04-14,usaa c,expense,wellness,sephora,,-123.84,Monday,False,False
+"On 2025-04-14, you spent $129.60 at j crew (Category: clothing) using usaa c. ",($129.60),2025-04-14,usaa c,expense,clothing,j crew,,-129.6,Monday,False,False
+"On 2025-04-14, you spent $242.69 at jc penney (Category: clothing) using usaa c. (tags: charcoal suit)",($242.69),2025-04-14,usaa c,expense,clothing,jc penney,charcoal suit,-242.69,Monday,False,False
+"On 2025-04-15, $269.00 was transferred involving  (Category: ) from usaa c. ",$269.00 ,2025-04-15,usaa c,transfer,,,,269.0,Tuesday,False,False
+"On 2025-04-15, you spent $8.70 at cucas (Category: food) using usaa c. (tags: eating out, fast food)",($8.70),2025-04-15,usaa c,expense,food,cucas,"eating out, fast food",-8.7,Tuesday,False,False
+"On 2025-04-15, you spent $15.00 at lauren studios photos (Category: other) using usaa c. (tags: graduation)",($15.00),2025-04-15,usaa c,expense,other,lauren studios photos,graduation,-15.0,Tuesday,False,False
+"On 2025-04-15, you spent $16.31 at dean coffee (Category: food) using usaa c. (tags: eating out, beverage)",($16.31),2025-04-15,usaa c,expense,food,dean coffee,"eating out, beverage",-16.31,Tuesday,False,False
+"On 2025-04-15, you spent $2.53 at in-n-out (Category: food) using usaa c. (tags: eating out, fast food)",($2.53),2025-04-15,usaa c,expense,food,in-n-out,"eating out, fast food",-2.53,Tuesday,False,False
+"On 2025-04-16, $33.00 was transferred involving  (Category: ) from usaa c. ",$33.00 ,2025-04-16,usaa c,transfer,,,,33.0,Wednesday,False,False
+"On 2025-04-16, you spent $12.00 at car wash (Category: transportation) using usaa c. ",($12.00),2025-04-16,usaa c,expense,transportation,car wash,,-12.0,Wednesday,False,False
+"On 2025-04-16, $775.00 was transferred involving  (Category: ) from usaa c. ",$775.00 ,2025-04-16,usaa c,transfer,,,,775.0,Wednesday,False,False
 "On 2025-04-16, $100.00 was transferred involving  (Category: ) from usaa c. ",($100.00),2025-04-16,usaa c,transfer,,,,100.0,Wednesday,False,False
-"On 2025-04-15, you spent $13.05 at dean coffee (Category: food) using usaa c. (tags: eating out)",($13.05),2025-04-15,usaa c,expense,food,dean coffee,eating out,13.05,Tuesday,False,False
-"On 2025-04-15, you spent $95.00 at alpha thrift (Category: clothing) using usaa c. (tags: second hand)",($95.00),2025-04-15,usaa c,expense,clothing,alpha thrift,second hand,95.0,Tuesday,False,False
-"On 2025-04-15, you spent $220.00 at ding tailoring (Category: clothing) using usaa c. (tags: charcoal suit)",($220.00),2025-04-15,usaa c,expense,clothing,ding tailoring,charcoal suit,220.0,Tuesday,False,False
-"On 2025-04-15, you spent $49.00 at ding tailoring (Category: clothing) using usaa c. ",($49.00),2025-04-15,usaa c,expense,clothing,ding tailoring,,49.0,Tuesday,False,False
-"On 2025-04-16, you spent $2.53 at in-n-out (Category: food) using usaa c. (tags: eating out, fast food)",($2.53),2025-04-16,usaa c,expense,food,in-n-out,"eating out, fast food",2.53,Wednesday,False,False
-"On 2025-04-17, you spent $12.00 at car wash (Category: transportation) using usaa c. ",($12.00),2025-04-17,usaa c,expense,transportation,car wash,,12.0,Thursday,False,False
-"On 2025-04-17, you spent $14.36 at uniqlo (Category: clothing) using usaa c. ",($14.36),2025-04-17,usaa c,expense,clothing,uniqlo,,14.36,Thursday,False,False
-"On 2025-04-18, you spent $18.71 at thai (Category: food) using usaa c. (tags: eating out)",($18.71),2025-04-18,usaa c,expense,food,thai,eating out,18.71,Friday,False,False
-"On 2025-04-18, you spent $27.48 at chicken guy (Category: food) using usaa c. (tags: eating out, fast food)",($27.48),2025-04-18,usaa c,expense,food,chicken guy,"eating out, fast food",27.48,Friday,False,False
-"On 2025-04-18, you spent $55.14 at zara (Category: clothing) using usaa c. ",($55.14),2025-04-18,usaa c,expense,clothing,zara,,55.14,Friday,False,False
-"On 2025-04-21, you spent $9.50 at ucsb concessions (Category: food) using usaa c. (tags: eating out, fast food)",($9.50),2025-04-21,usaa c,expense,food,ucsb concessions,"eating out, fast food",9.5,Monday,False,False
-"On 2025-04-21, you spent $47.50 at richies barbershop (Category: wellness) using usaa c. ",($47.50),2025-04-21,usaa c,expense,wellness,richies barbershop,,47.5,Monday,False,False
-"On 2025-04-21, you spent $23.91 at albertsons propane (Category: other) using usaa c. ",($23.91),2025-04-21,usaa c,expense,other,albertsons propane,,23.91,Monday,False,False
-"On 2025-04-21, you spent $73.22 at target (Category: wellness) using usaa c. ",($73.22),2025-04-21,usaa c,expense,wellness,target,,73.22,Monday,False,False
-"On 2025-04-21, you spent $68.00 at farmacy (Category: cbd/thc) using usaa c. ",($68.00),2025-04-21,usaa c,expense,cbd/thc,farmacy,,68.0,Monday,False,False
-"On 2025-04-21, you spent $21.01 at zocalo (Category: food) using usaa c. (tags: eating out, fast food)",($21.01),2025-04-21,usaa c,expense,food,zocalo,"eating out, fast food",21.01,Monday,False,False
-"On 2025-04-21, you spent $11.63 at yoshinoya (Category: food) using usaa c. (tags: eating out, fast food)",($11.63),2025-04-21,usaa c,expense,food,yoshinoya,"eating out, fast food",11.63,Monday,False,False
-"On 2025-04-21, you received an income of $1004.00 from  (Category: tax return) into usaa s. ","$1,004.00 ",2025-04-21,usaa s,income,tax return,,,-1004.0,Monday,False,False
-"On 2025-04-22, you spent $4.03 at iv deli (Category: food) using usaa c. (tags: eating out, beverage)",($4.03),2025-04-22,usaa c,expense,food,iv deli,"eating out, beverage",4.03,Tuesday,False,False
-"On 2025-04-22, you spent $6.39 at woodstocks (Category: food) using usaa c. (tags: eating out, fast food)",($6.39),2025-04-22,usaa c,expense,food,woodstocks,"eating out, fast food",6.39,Tuesday,False,False
-"On 2025-04-22, you spent $6.53 at lao's (Category: food) using usaa c. (tags: eating out, fast food)",($6.53),2025-04-22,usaa c,expense,food,lao's,"eating out, fast food",6.53,Tuesday,False,False
-"On 2025-04-22, you spent $11.63 at courtyard (Category: food) using usaa c. (tags: eating out)",($11.63),2025-04-22,usaa c,expense,food,courtyard,eating out,11.63,Tuesday,False,False
-"On 2025-04-23, a transaction of $16.00 occurred at ben a (Type: reimburstment, Category: other) using usaa c. (tags: yosemite)",$16.00 ,2025-04-23,usaa c,reimburstment,other,ben a,yosemite,-16.0,Wednesday,False,False
-"On 2025-04-23, you spent $10.88 at panda express (Category: food) using usaa c. (tags: eating out, fast food)",($10.88),2025-04-23,usaa c,expense,food,panda express,"eating out, fast food",10.88,Wednesday,False,False
-"On 2025-04-23, you spent $27.06 at kyles kitchen (Category: food) using usaa c. (tags: eating out, fast food)",($27.06),2025-04-23,usaa c,expense,food,kyles kitchen,"eating out, fast food",27.06,Wednesday,False,False
-"On 2025-04-23, you spent $47.09 at fuel depot (Category: transportation) using usaa c. ",($47.09),2025-04-23,usaa c,expense,transportation,fuel depot,,47.09,Wednesday,False,False
-"On 2025-04-23, you spent $49.03 at costco (Category: food) using usaa c. (tags: groceries)",($49.03),2025-04-23,usaa c,expense,food,costco,groceries,49.03,Wednesday,False,False
-"On 2025-04-25, you spent $9.98 at target (Category: wellness) using usaa c. ",($9.98),2025-04-25,usaa c,expense,wellness,target,,9.98,Friday,False,False
-"On 2025-04-25, you spent $25.43 at arco (Category: transportation) using usaa c. ",($25.43),2025-04-25,usaa c,expense,transportation,arco,,25.43,Friday,False,False
-"On 2025-04-25, you spent $46.00 at anela (Category: entertainment) using usaa c. (tags: yosemite)",($46.00),2025-04-25,usaa c,expense,entertainment,anela,yosemite,46.0,Friday,False,False
-"On 2025-04-25, you withdrew $83.25 from usaa c (Vendor: , Category: cash). (tags: bike)",($83.25),2025-04-25,usaa c,withdrawal,cash,,bike,83.25,Friday,False,False
-"On 2025-04-25, you spent $3.00 at state street (Category: parking) using usaa c. ",($3.00),2025-04-25,usaa c,expense,parking,state street,,3.0,Friday,False,False
-"On 2025-04-25, you spent $13.00 at electricity (Category: utilities) using usaa c. ",($13.00),2025-04-25,usaa c,expense,utilities,electricity,,13.0,Friday,False,False
-"On 2025-04-25, you spent $23.57 at caje (Category: food) using usaa c. (tags: eating out, beverage)",($23.57),2025-04-25,usaa c,expense,food,caje,"eating out, beverage",23.57,Friday,False,False
-"On 2025-04-28, you spent $46.00 at anela (Category: error) using usaa c. ",($46.00),2025-04-28,usaa c,expense,error,anela,,46.0,Monday,False,False
-"On 2025-04-28, you spent $4.30 at ucsb (Category: parking) using usaa c. ",($4.30),2025-04-28,usaa c,expense,parking,ucsb,,4.3,Monday,False,False
-"On 2025-04-28, you spent $15.00 at ucsb alumni weekend (Category: entertainment) using usaa c. (tags: networking)",($15.00),2025-04-28,usaa c,expense,entertainment,ucsb alumni weekend,networking,15.0,Monday,False,False
+"On 2025-04-15, you spent $13.05 at dean coffee (Category: food) using usaa c. (tags: eating out)",($13.05),2025-04-15,usaa c,expense,food,dean coffee,eating out,-13.05,Tuesday,False,False
+"On 2025-04-15, you spent $95.00 at alpha thrift (Category: clothing) using usaa c. (tags: second hand)",($95.00),2025-04-15,usaa c,expense,clothing,alpha thrift,second hand,-95.0,Tuesday,False,False
+"On 2025-04-15, you spent $220.00 at ding tailoring (Category: clothing) using usaa c. (tags: charcoal suit)",($220.00),2025-04-15,usaa c,expense,clothing,ding tailoring,charcoal suit,-220.0,Tuesday,False,False
+"On 2025-04-15, you spent $49.00 at ding tailoring (Category: clothing) using usaa c. ",($49.00),2025-04-15,usaa c,expense,clothing,ding tailoring,,-49.0,Tuesday,False,False
+"On 2025-04-16, you spent $2.53 at in-n-out (Category: food) using usaa c. (tags: eating out, fast food)",($2.53),2025-04-16,usaa c,expense,food,in-n-out,"eating out, fast food",-2.53,Wednesday,False,False
+"On 2025-04-17, you spent $12.00 at car wash (Category: transportation) using usaa c. ",($12.00),2025-04-17,usaa c,expense,transportation,car wash,,-12.0,Thursday,False,False
+"On 2025-04-17, you spent $14.36 at uniqlo (Category: clothing) using usaa c. ",($14.36),2025-04-17,usaa c,expense,clothing,uniqlo,,-14.36,Thursday,False,False
+"On 2025-04-18, you spent $18.71 at thai (Category: food) using usaa c. (tags: eating out)",($18.71),2025-04-18,usaa c,expense,food,thai,eating out,-18.71,Friday,False,False
+"On 2025-04-18, you spent $27.48 at chicken guy (Category: food) using usaa c. (tags: eating out, fast food)",($27.48),2025-04-18,usaa c,expense,food,chicken guy,"eating out, fast food",-27.48,Friday,False,False
+"On 2025-04-18, you spent $55.14 at zara (Category: clothing) using usaa c. ",($55.14),2025-04-18,usaa c,expense,clothing,zara,,-55.14,Friday,False,False
+"On 2025-04-21, you spent $9.50 at ucsb concessions (Category: food) using usaa c. (tags: eating out, fast food)",($9.50),2025-04-21,usaa c,expense,food,ucsb concessions,"eating out, fast food",-9.5,Monday,False,False
+"On 2025-04-21, you spent $47.50 at richies barbershop (Category: wellness) using usaa c. ",($47.50),2025-04-21,usaa c,expense,wellness,richies barbershop,,-47.5,Monday,False,False
+"On 2025-04-21, you spent $23.91 at albertsons propane (Category: other) using usaa c. ",($23.91),2025-04-21,usaa c,expense,other,albertsons propane,,-23.91,Monday,False,False
+"On 2025-04-21, you spent $73.22 at target (Category: wellness) using usaa c. ",($73.22),2025-04-21,usaa c,expense,wellness,target,,-73.22,Monday,False,False
+"On 2025-04-21, you spent $68.00 at farmacy (Category: cbd/thc) using usaa c. ",($68.00),2025-04-21,usaa c,expense,cbd/thc,farmacy,,-68.0,Monday,False,False
+"On 2025-04-21, you spent $21.01 at zocalo (Category: food) using usaa c. (tags: eating out, fast food)",($21.01),2025-04-21,usaa c,expense,food,zocalo,"eating out, fast food",-21.01,Monday,False,False
+"On 2025-04-21, you spent $11.63 at yoshinoya (Category: food) using usaa c. (tags: eating out, fast food)",($11.63),2025-04-21,usaa c,expense,food,yoshinoya,"eating out, fast food",-11.63,Monday,False,False
+"On 2025-04-21, you received an income of $1004.00 from  (Category: tax return) into usaa s. ","$1,004.00 ",2025-04-21,usaa s,income,tax return,,,1004.0,Monday,False,False
+"On 2025-04-22, you spent $4.03 at iv deli (Category: food) using usaa c. (tags: eating out, beverage)",($4.03),2025-04-22,usaa c,expense,food,iv deli,"eating out, beverage",-4.03,Tuesday,False,False
+"On 2025-04-22, you spent $6.39 at woodstocks (Category: food) using usaa c. (tags: eating out, fast food)",($6.39),2025-04-22,usaa c,expense,food,woodstocks,"eating out, fast food",-6.39,Tuesday,False,False
+"On 2025-04-22, you spent $6.53 at lao's (Category: food) using usaa c. (tags: eating out, fast food)",($6.53),2025-04-22,usaa c,expense,food,lao's,"eating out, fast food",-6.53,Tuesday,False,False
+"On 2025-04-22, you spent $11.63 at courtyard (Category: food) using usaa c. (tags: eating out)",($11.63),2025-04-22,usaa c,expense,food,courtyard,eating out,-11.63,Tuesday,False,False
+"On 2025-04-23, a transaction of $16.00 occurred at ben a (Type: reimburstment, Category: other) using usaa c. (tags: yosemite)",$16.00 ,2025-04-23,usaa c,reimburstment,other,ben a,yosemite,16.0,Wednesday,False,False
+"On 2025-04-23, you spent $10.88 at panda express (Category: food) using usaa c. (tags: eating out, fast food)",($10.88),2025-04-23,usaa c,expense,food,panda express,"eating out, fast food",-10.88,Wednesday,False,False
+"On 2025-04-23, you spent $27.06 at kyles kitchen (Category: food) using usaa c. (tags: eating out, fast food)",($27.06),2025-04-23,usaa c,expense,food,kyles kitchen,"eating out, fast food",-27.06,Wednesday,False,False
+"On 2025-04-23, you spent $47.09 at fuel depot (Category: transportation) using usaa c. ",($47.09),2025-04-23,usaa c,expense,transportation,fuel depot,,-47.09,Wednesday,False,False
+"On 2025-04-23, you spent $49.03 at costco (Category: food) using usaa c. (tags: groceries)",($49.03),2025-04-23,usaa c,expense,food,costco,groceries,-49.03,Wednesday,False,False
+"On 2025-04-25, you spent $9.98 at target (Category: wellness) using usaa c. ",($9.98),2025-04-25,usaa c,expense,wellness,target,,-9.98,Friday,False,False
+"On 2025-04-25, you spent $25.43 at arco (Category: transportation) using usaa c. ",($25.43),2025-04-25,usaa c,expense,transportation,arco,,-25.43,Friday,False,False
+"On 2025-04-25, you spent $46.00 at anela (Category: entertainment) using usaa c. (tags: yosemite)",($46.00),2025-04-25,usaa c,expense,entertainment,anela,yosemite,-46.0,Friday,False,False
+"On 2025-04-25, you withdrew $83.25 from usaa c (Vendor: , Category: cash). (tags: bike)",($83.25),2025-04-25,usaa c,withdrawal,cash,,bike,-83.25,Friday,False,False
+"On 2025-04-25, you spent $3.00 at state street (Category: parking) using usaa c. ",($3.00),2025-04-25,usaa c,expense,parking,state street,,-3.0,Friday,False,False
+"On 2025-04-25, you spent $13.00 at electricity (Category: utilities) using usaa c. ",($13.00),2025-04-25,usaa c,expense,utilities,electricity,,-13.0,Friday,False,False
+"On 2025-04-25, you spent $23.57 at caje (Category: food) using usaa c. (tags: eating out, beverage)",($23.57),2025-04-25,usaa c,expense,food,caje,"eating out, beverage",-23.57,Friday,False,False
+"On 2025-04-28, you spent $46.00 at anela (Category: error) using usaa c. ",($46.00),2025-04-28,usaa c,expense,error,anela,,-46.0,Monday,False,False
+"On 2025-04-28, you spent $4.30 at ucsb (Category: parking) using usaa c. ",($4.30),2025-04-28,usaa c,expense,parking,ucsb,,-4.3,Monday,False,False
+"On 2025-04-28, you spent $15.00 at ucsb alumni weekend (Category: entertainment) using usaa c. (tags: networking)",($15.00),2025-04-28,usaa c,expense,entertainment,ucsb alumni weekend,networking,-15.0,Monday,False,False

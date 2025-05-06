@@ -1,6 +1,6 @@
 import pandas as pd
 from pathlib import Path
-from embedding_utils import (
+from howard_financial.embedding_utils import (
     compute_embeddings,
     save_vector_store,
     load_vector_store,

@@ -5,6 +5,19 @@ import pickle
 from pathlib import Path
 from typing import List, Tuple
 
+"""
+vector_store.py
+
+Handles the creation, saving, loading, and querying of a FAISS-based vector store
+for fast semantic search over financial transaction data embeddings.
+
+Main functions:
+- compute_embeddings
+- save_vector_store
+- load_vector_store
+- query_vector_store
+"""
+
 def compute_embeddings(
     df: pd.DataFrame,
     text_col: str = "text",

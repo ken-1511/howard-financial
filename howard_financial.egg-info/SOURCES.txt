@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.py
+howard_financial/__init__.py
+howard_financial/agent.py
+howard_financial/data_processing.py
+howard_financial/dsl.py
+howard_financial/embedding_utils.py
+howard_financial/intents.py
+howard_financial/text_formatting.py
+howard_financial/vector_store.py
+howard_financial.egg-info/PKG-INFO
+howard_financial.egg-info/SOURCES.txt
+howard_financial.egg-info/dependency_links.txt
+howard_financial.egg-info/requires.txt
+howard_financial.egg-info/top_level.txt

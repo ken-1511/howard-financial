@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+src/howard_financial.egg-info/PKG-INFO
+src/howard_financial.egg-info/SOURCES.txt
+src/howard_financial.egg-info/dependency_links.txt
+src/howard_financial.egg-info/top_level.txt

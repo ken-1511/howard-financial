@@ -9,7 +9,8 @@ def load_and_clean(path: str) -> pd.DataFrame:
     Steps:
     - Reads in the CSV file.
     - Ensures 'Date' is a proper datetime (malformed dates become NaT).
-    - Converts the 'Dollars' column to signed floats (handles negatives via parentheses).
+    - Converts the 'Dollars' column to signed floats (handles negatives via parentheses)
+      BUT only applies negative signs to specific types (expense, withdrawal).
     - Normalizes key text columns (e.g., lowercasing, stripping spaces) for consistency.
     """
     # ── 1. Load (Ingest) the Raw Data --------------------------------------------
@@ -37,13 +38,17 @@ def load_and_clean(path: str) -> pd.DataFrame:
 
     # ── 4. Convert 'Dollars' to Numeric Amounts ----------------------------------
     # Remove $ signs, commas, and parentheses, then convert to float.
-    # Parentheses are used in finance to indicate negatives (e.g., ($500) → -500).
+    # Parentheses are used in finance to indicate negatives (e.g., ($500) → -500),
+    # BUT we apply negative signs **only for specific transaction types.**
     tx = raw.copy()
     tx["Amount"] = (tx["Dollars"].astype(str)
                                 .str.replace(r"[,$]", "", regex=True)   # remove $ and commas
                                 .str.replace(r"[()]", "", regex=True)   # remove parentheses
                                 .astype(float))
-    neg_mask = raw["Dollars"].astype(str).str.contains(r"\(")
+
+    # Apply NEGATIVE only for 'expense' and 'withdrawal' types
+    neg_types = ["expense", "withdrawal"]
+    neg_mask = tx["Type"].str.lower().isin(neg_types)
     tx.loc[neg_mask, "Amount"] *= -1
 
     # ── 5. Clean Up String Columns -----------------------------------------------
@@ -52,5 +57,8 @@ def load_and_clean(path: str) -> pd.DataFrame:
     for col in ["Account", "Type", "Category", "Vendor", "Tags"]:
         if col in tx.columns:
             tx[col] = tx[col].fillna("").str.strip().str.lower()
+
+    # ── 6. Sanity Check: Log unique transaction types ----------------------------
+    print("✅ Sanity Check – Unique 'Type' values found:", tx["Type"].unique())
 
     return tx
