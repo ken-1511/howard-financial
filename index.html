@@ -3,52 +3,490 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Howard Financial</title>
+  <title>Howard Financial | Real Estate & Cryptocurrency</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap">
 </head>
 <body>
-  <div class="container">
-    <h1>Welcome to Howard Financial!</h1>
-
-    <p>
-      This page is being developed as a <strong>dApp</strong> (decentralized app) in order to foster in the next generation of real estate transactions.
-      At Howard Financial, we envision a uniquely american opportunity at the intersection of <em>real estate</em> and <em>cryptocurrency</em>.
-    </p>
-
-    <p>
-      We proudly serve the communities of <strong>Alton, IL</strong> and <strong>St. Louis, Missouri</strong>. David Howard, principle founder, strives to brings each unique property to life. He carefully curates each dream 
-      estate <em>complete with luxurious modern comforts</em> to the charming Midwest-Americana heritage.
-    </p>
-
-    <p>
-      Currently based out of Southern California, our father, mother and sons company hopes to bring warmth and hearth to you and your loved ones <strong>from one family to another</strong>.
-    </p>
-
-    <hr>
-
-    <p>Connect your wallet to view your preferred payment method:</p>
-    <button id="connectBtn">Connect Wallet</button>
-
-    <div id="walletInfo" class="hidden">
-      <p><strong>Connected Wallet:</strong> <span id="walletAddress"></span></p>
-      <div id="networkInfo"></div>
-    </div>
-
-    <h2>Manual Payment Options</h2>
-    <div class="wallet-box">
-      <h3>Polygon (MATIC)</h3>
-      <p>0xYourPolygonAddressHere</p>
-    </div>
-    <div class="wallet-box">
-      <h3>Ethereum (ETH)</h3>
-      <p>0xYourEthereumAddressHere</p>
-    </div>
-    <div class="wallet-box">
-      <h3>Bitcoin (BTC)</h3>
-      <p>bc1YourBitcoinAddressHere</p>
+  <!-- Loading Animation -->
+  <div class="loading-screen">
+    <div class="loading-animation">
+      <div class="loading-icon">
+        <i class="fas fa-home"></i>
+        <i class="fas fa-coins"></i>
+      </div>
+      <div class="loading-bar">
+        <span></span>
+      </div>
     </div>
   </div>
 
+  <!-- Shapes/Decorative Elements -->
+  <div class="decorative-elements">
+    <div class="shape shape-1"></div>
+    <div class="shape shape-2"></div>
+    <div class="shape shape-3"></div>
+    <div class="shape shape-4"></div>
+  </div>
+
+  <!-- Header -->
+  <header>
+    <div class="header-container">
+      <div class="logo">
+        <h1>Howard<span>Financial</span></h1>
+      </div>
+      
+      <div class="theme-toggle">
+        <input type="checkbox" id="darkMode" class="toggle-checkbox">
+        <label for="darkMode" class="toggle-label">
+          <i class="fas fa-sun"></i>
+          <i class="fas fa-moon"></i>
+          <span class="toggle-ball"></span>
+        </label>
+      </div>
+
+      <div class="menu-toggle">
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+    
+    <nav class="main-nav">
+      <ul>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#payment">Payment</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="hero" class="split-screen">
+      <div class="hero-content">
+        <h2 class="hero-title">Midwestern Roots, <br><span>Crypto Future</span></h2>
+        <p class="hero-subtitle">Do you hate taxes? Want to invest your crypto without sacrificing capital gains?</p>
+        <a href="#services" class="btn primary-btn">
+          <span>Explore Our Services</span>
+          <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+      <div class="hero-image">
+        <img src="https://cdn.pixabay.com/photo/2024/02/17/13/38/cabin-8579310_1280.jpg" alt="Midwestern house">
+        <div class="hero-overlay"></div>
+        <div class="hero-facts">
+          <div class="fact">
+            <span class="number">10+</span>
+            <span class="text">Years Experience</span>
+          </div>
+          <div class="fact">
+            <span class="number">100%</span>
+            <span class="text">Secure Transactions</span>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-indicator">
+        <p>Scroll Down</p>
+        <div class="mouse">
+          <span></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Who We Are</span>
+          <h2 class="section-title">About Howard<span>Financial</span></h2>
+          <div class="divider"></div>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-image">
+            <img src="https://cdn.pixabay.com/photo/2022/07/10/19/30/house-7313645_1280.jpg" alt="Summer property by the water">
+            <div class="about-badge">
+              <i class="fas fa-award"></i>
+              <span>Since 2015</span>
+            </div>
+          </div>
+          <div class="about-content">
+            <p class="highlighted-text">
+              This platform is being developed as a <strong>dApp</strong> (decentralized app) to foster the next generation of real estate transactions.
+            </p>
+            <p>
+              At Howard Financial, we envision a uniquely American opportunity at the intersection of <em>real estate</em> and <em>cryptocurrency</em>.
+            </p>
+            <p>
+              We proudly serve the communities of <strong>Alton, IL</strong> and <strong>St. Louis, Missouri</strong>. David Howard, principal founder, brings each unique property to life, carefully curating dream 
+              estates <em>complete with luxurious modern comforts</em> while honoring the charming Midwest-Americana heritage.
+            </p>
+            <p>
+              Currently based out of Southern California, our father, mother, and sons company hopes to bring warmth and hearth to you and your loved ones <strong>from one family to another</strong>.
+            </p>
+            <div class="signature">
+              <p>David Howard</p>
+              <span>Principal Founder</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="curved-divider"></div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">What We Do</span>
+          <h2 class="section-title">Our Services</h2>
+          <div class="divider"></div>
+        </div>
+
+        <div class="services-tabs">
+          <div class="tab-header">
+            <div class="tab active" data-tab="acquisition">Property Acquisition</div>
+            <div class="tab" data-tab="crypto">Crypto Transactions</div>
+            <div class="tab" data-tab="investment">Investment Planning</div>
+          </div>
+          <div class="tab-content">
+            <div class="tab-pane active" id="acquisition">
+              <div class="service-detail">
+                <div class="service-icon">
+                  <i class="fas fa-home"></i>
+                </div>
+                <div class="service-info">
+                  <h3>Property Acquisition</h3>
+                  <p>Find your perfect property with our curated selection of premium real estate opportunities, blending Southern California elegance with Midwestern values.</p>
+                  <a href="#contact" class="btn-link">Learn More <i class="fas fa-long-arrow-alt-right"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane" id="crypto">
+              <div class="service-detail">
+                <div class="service-icon">
+                  <i class="fas fa-coins"></i>
+                </div>
+                <div class="service-info">
+                  <h3>Crypto Transactions</h3>
+                  <p>Secure, transparent blockchain-based property transactions with multiple cryptocurrency options, bringing West Coast innovation to Heartland America.</p>
+                  <a href="#contact" class="btn-link">Learn More <i class="fas fa-long-arrow-alt-right"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane" id="investment">
+              <div class="service-detail">
+                <div class="service-icon">
+                  <i class="fas fa-chart-line"></i>
+                </div>
+                <div class="service-info">
+                  <h3>Investment Planning</h3>
+                  <p>Expert guidance on real estate investments with our unique coastal-meets-midwest perspective, emphasizing sustainable growth and community value.</p>
+                  <a href="#contact" class="btn-link">Learn More <i class="fas fa-long-arrow-alt-right"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="services-cards">
+          <div class="service-card" data-aos="fade-up">
+            <div class="card-icon">
+              <i class="fas fa-handshake"></i>
+            </div>
+            <h3>Community Integration</h3>
+            <p>We help you connect with your new community, drawing on our roots in both regions to ensure your transition feels like coming home.</p>
+          </div>
+          <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="card-icon">
+              <i class="fas fa-house-user"></i>
+            </div>
+            <h3>Heritage Properties</h3>
+            <p>Specialized in connecting you with properties that honor both coastal modernism and the rich architectural heritage of America's heartland.</p>
+          </div>
+          <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="card-icon">
+              <i class="fas fa-leaf"></i>
+            </div>
+            <h3>Sustainable Living</h3>
+            <p>Our peaceful, nature-inspired homes create harmony between modern living and the natural world, providing tranquil spaces where families can relax and grow together.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Payment Section -->
+    <section id="payment">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">How To Pay</span>
+          <h2 class="section-title">Payment Options</h2>
+          <div class="divider"></div>
+        </div>
+
+        <div class="wallet-connect">
+          <div class="wallet-connect-text">
+            <p>Connect your wallet to view your preferred payment method:</p>
+            <button id="connectBtn" class="btn primary-btn">
+              <i class="fas fa-wallet"></i>
+              <span>Connect Wallet</span>
+            </button>
+          </div>
+          <div class="wallet-graphic">
+            <img src="https://cdn.pixabay.com/photo/2023/02/17/13/38/cabin-8579310_1280.jpg" alt="Crypto wallet" class="wallet-img">
+            <div class="wallet-overlay"></div>
+          </div>
+        </div>
+
+        <div id="walletInfo" class="hidden wallet-info-container">
+          <div class="wallet-info-card">
+            <p><strong>Connected Wallet:</strong> <span id="walletAddress"></span></p>
+            <div id="networkInfo"></div>
+          </div>
+        </div>
+
+        <h3 class="payment-subtitle">Manual Payment Options</h3>
+        <div class="wallet-grid">
+          <div class="wallet-box coming-soon">
+            <div class="wallet-header">
+              <div class="crypto-icon"><i class="fab fa-ethereum"></i></div>
+              <h4>Polygon (MATIC)</h4>
+            </div>
+            <div class="wallet-content">
+              <p class="wallet-address coming-soon-text">Coming Soon</p>
+            </div>
+          </div>
+          <div class="wallet-box coming-soon">
+            <div class="wallet-header">
+              <div class="crypto-icon"><i class="fab fa-ethereum"></i></div>
+              <h4>Ethereum (ETH)</h4>
+            </div>
+            <div class="wallet-content">
+              <p class="wallet-address coming-soon-text">Coming Soon</p>
+            </div>
+          </div>
+          <div class="wallet-box coming-soon">
+            <div class="wallet-header">
+              <div class="crypto-icon"><i class="fab fa-bitcoin"></i></div>
+              <h4>Bitcoin (BTC)</h4>
+            </div>
+            <div class="wallet-content">
+              <p class="wallet-address coming-soon-text">Coming Soon</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="curved-divider curved-divider-inverse"></div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Get In Touch</span>
+          <h2 class="section-title">Contact Us</h2>
+          <div class="divider"></div>
+        </div>
+
+        <div class="contact-wrapper">
+          <div class="contact-info">
+            <div class="contact-card">
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div class="contact-text">
+                  <h4>Main Office</h4>
+                  <p>Temecula, CA</p>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div class="contact-text">
+                  <h4>Regional Office</h4>
+                  <p>St. Louis, Missouri</p>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fas fa-envelope"></i>
+                </div>
+                <div class="contact-text">
+                  <h4>Email Us</h4>
+                  <p>howarddk@proton.me</p>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fas fa-phone"></i>
+                </div>
+                <div class="contact-text">
+                  <h4>Call Us</h4>
+                  <p>(858) 213-5451</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form-container">
+            <form id="contactForm" class="contact-form">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+              </div>
+              <button type="submit" class="btn primary-btn">
+                <span>Send Message</span>
+                <i class="fas fa-paper-plane"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <h3>Howard<span>Financial</span></h3>
+          <p>Building Bridges for Future Real Estates</p>
+          <div class="social-icons">
+            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/ken-howard11/" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#payment">Payment</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>Connect With Us</h4>
+          <p>Have questions? We're here to help!</p>
+          <a href="https://www.linkedin.com/in/ken-howard11/" class="footer-contact-link">
+            <i class="fab fa-linkedin"></i> Reach out in support!
+          </a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>This site is open source software. Content and design released under MIT license.</p>
+      </div>
+    </div>
+  </footer>
+
   <script src="wallet.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Loading animation
+      setTimeout(() => {
+        document.querySelector('.loading-screen').classList.add('loaded');
+      }, 1500);
+      
+      // Dark mode toggle
+      const darkModeToggle = document.getElementById('darkMode');
+      darkModeToggle.addEventListener('change', function() {
+        document.body.classList.toggle('dark-mode');
+      });
+      
+      // Mobile menu toggle
+      const menuToggle = document.querySelector('.menu-toggle');
+      const mainNav = document.querySelector('.main-nav');
+      
+      menuToggle.addEventListener('click', function() {
+        menuToggle.classList.toggle('active');
+        mainNav.classList.toggle('active');
+      });
+      
+      // Services tabs
+      const tabs = document.querySelectorAll('.tab');
+      tabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+          // Remove active class from all tabs
+          tabs.forEach(t => t.classList.remove('active'));
+          
+          // Add active class to current tab
+          tab.classList.add('active');
+          
+          // Hide all tab panes
+          const tabPanes = document.querySelectorAll('.tab-pane');
+          tabPanes.forEach(pane => pane.classList.remove('active'));
+          
+          // Show current tab pane
+          const tabId = tab.getAttribute('data-tab');
+          document.getElementById(tabId).classList.add('active');
+        });
+      });
+
+      // Copy address functionality
+      document.querySelectorAll('.copy-btn').forEach(button => {
+        button.addEventListener('click', function() {
+          const address = this.getAttribute('data-address');
+          navigator.clipboard.writeText(address)
+            .then(() => {
+              const originalHtml = this.innerHTML;
+              this.innerHTML = '<i class="fas fa-check"></i> Copied!';
+              setTimeout(() => {
+                this.innerHTML = originalHtml;
+              }, 2000);
+            });
+        });
+      });
+
+      // Add scroll animation class to elements
+      const scrollElements = document.querySelectorAll('[data-aos]');
+      
+      const elementInView = (el) => {
+        const elementTop = el.getBoundingClientRect().top;
+        return elementTop <= window.innerHeight * 0.8;
+      };
+      
+      const displayScrollElement = (element) => {
+        element.classList.add('scrolled');
+      };
+      
+      const hideScrollElement = (element) => {
+        element.classList.remove('scrolled');
+      };
+      
+      const handleScrollAnimation = () => {
+        scrollElements.forEach((el) => {
+          if (elementInView(el)) {
+            displayScrollElement(el);
+          } else {
+            hideScrollElement(el);
+          }
+        });
+      };
+      
+      window.addEventListener('scroll', handleScrollAnimation);
+      
+      // Initial check
+      handleScrollAnimation();
+    });
+  </script>
 </body>
 </html>
