@@ -64,7 +64,7 @@
         <li><button class="nav-button" data-page="home">Home</button></li>
         <li><button class="nav-button" data-page="about">About</button></li>
         <li><button class="nav-button" data-page="services">Services</button></li>
-        <li><button class="nav-button" data-page="payment">Invest</button></li>
+        <li><button class="nav-button" data-page="payment">Payment</button></li>
         <li><button class="nav-button" data-page="contact">Contact</button></li>
       </ul>
     </nav>
@@ -75,7 +75,7 @@
     <section id="hero" class="split-screen">
       <div class="hero-content">
         <h2 class="hero-title">Howard <span>Financial</span></h2>
-        <p class="hero-subtitle">Building Bridges for Future Family Estates</p>
+        <p class="hero-subtitle">Building Bridges for Future Real Estates</p>
         
         <div class="hero-buttons">
           <a href="#featured" class="btn primary-btn">
@@ -86,7 +86,12 @@
         </div>
       </div>
       
-
+      <div class="scroll-indicator left-aligned">
+        <p>Scroll Down</p>
+        <div class="mouse">
+          <span></span>
+        </div>
+      </div>
     </section>
     
     <!-- Featured Listings Section -->
@@ -193,7 +198,7 @@
               At Howard Financial, we celebrate the uniquely American dream of homeownership.
             </p>
             <p>
-              We renovate private homes in the St. Louis metro area. David Howard, Principal Founder, breathes new life into each property by blending luxurious modern comforts with timeless Midwest-Americana charm.
+              We renovate private homes in the St. Louis metro area by blending luxurious modern comforts with timeless Midwest-Americana charm.
             </p>
             <p>
               Prospective buyers can book an Airbnb stay in one of our featured homes to experience firsthand the warmth and character of their next life chapter in St. Louis.
@@ -292,21 +297,65 @@
       </div>
     </section>
 
-    <!-- Investment Section -->
+    <!-- Payment Section -->
     <section id="payment">
       <div class="container">
         <div class="section-header">
-          <span class="section-subtitle">Investment Opportunities</span>
-          <h2 class="section-title">Invest With Us</h2>
+          <span class="section-subtitle">How To Pay</span>
+          <h2 class="section-title">Payment Options</h2>
           <div class="divider"></div>
         </div>
 
-        <div class="under-construction">
-          <div class="construction-icon">
-            <i class="fas fa-hard-hat"></i>
+        <div class="wallet-connect">
+          <div class="wallet-connect-text">
+            <p>Connect your wallet to view your preferred payment method:</p>
+            <button id="connectBtn" class="btn primary-btn">
+              <i class="fas fa-wallet"></i>
+              <span>Connect Wallet</span>
+            </button>
           </div>
-          <h3>Page Under Construction</h3>
-          <p>We're currently developing our investment platform. Please check back soon for exciting opportunities to invest in our properties.</p>
+          <div class="wallet-graphic">
+            <img src="https://cdn.pixabay.com/photo/2023/02/17/13/38/cabin-8579310_1280.jpg" alt="Crypto wallet" class="wallet-img">
+            <div class="wallet-overlay"></div>
+          </div>
+        </div>
+
+        <div id="walletInfo" class="hidden wallet-info-container">
+          <div class="wallet-info-card">
+            <p><strong>Connected Wallet:</strong> <span id="walletAddress"></span></p>
+            <div id="networkInfo"></div>
+          </div>
+        </div>
+
+        <h3 class="payment-subtitle">Manual Payment Options</h3>
+        <div class="wallet-grid">
+          <div class="wallet-box coming-soon">
+            <div class="wallet-header">
+              <div class="crypto-icon"><i class="fab fa-ethereum"></i></div>
+              <h4>Polygon (MATIC)</h4>
+            </div>
+            <div class="wallet-content">
+              <p class="wallet-address coming-soon-text">Coming Soon</p>
+            </div>
+          </div>
+          <div class="wallet-box coming-soon">
+            <div class="wallet-header">
+              <div class="crypto-icon"><i class="fab fa-ethereum"></i></div>
+              <h4>Ethereum (ETH)</h4>
+            </div>
+            <div class="wallet-content">
+              <p class="wallet-address coming-soon-text">Coming Soon</p>
+            </div>
+          </div>
+          <div class="wallet-box coming-soon">
+            <div class="wallet-header">
+              <div class="crypto-icon"><i class="fab fa-bitcoin"></i></div>
+              <h4>Bitcoin (BTC)</h4>
+            </div>
+            <div class="wallet-content">
+              <p class="wallet-address coming-soon-text">Coming Soon</p>
+            </div>
+          </div>
         </div>
       </div>
       <div class="curved-divider curved-divider-inverse"></div>
@@ -393,7 +442,7 @@
       <div class="footer-content">
         <div class="footer-logo">
           <h3>Howard <span>Financial</span></h3>
-          <p>Building Bridges for Future Family Estates</p>
+          <p>Building Bridges for Future Real Estates</p>
           <div class="social-icons">
             <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
             <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
@@ -407,7 +456,7 @@
             <li><a href="#hero">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#services">Services</a></li>
-            <li><a href="#payment">Invest</a></li>
+            <li><a href="#payment">Payment</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
