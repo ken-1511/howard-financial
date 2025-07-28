@@ -1,0 +1,323 @@
+Date,Dollars,Account,Type,Category,Vendor,Tags,Raw,Value,Abs,USAA S,USAA C
+3/25/2025,$5962.97,USAA S,income,Financial Aid,Financial Aid,Financial Aid,,5962.97,5962.97,5962.97,0.00
+3/25/2025,$698.54,USAA S,income,Financial Aid,Financial Aid,Financial Aid,,698.54,698.54,6661.51,0.00
+3/25/2025,$108.95,USAA C,income,Financial Aid,Financial Aid,Financial Aid,,108.95,108.95,6661.51,108.95
+4/1/2025,-$775.00,USAA S,expense,Rent,6640 Pasado,,,-775,775,5886.51,108.95
+4/1/2025,-$11.00,USAA C,expense,Food,Coral Tree,Eating out,,-11,11,5886.51,97.95
+4/2/2025,-$179.00,USAA S,expense,Transportation,Registration,Green Machine,,-179,179,5707.51,97.95
+4/2/2025,-$5.99,USAA C,expense,Subscription,Spotify,,,-5.99,5.99,5707.51,91.96
+4/3/2025,-$5.30,USAA C,expense,Parking,UCSB,,,-5.3,5.3,5707.51,86.66
+4/4/2025,-$44.00,USAA S,expense,Transportation,Electrify America,Charging,,-44,44,5663.51,86.66
+4/4/2025,-$987.00,USAA S,expense,Phone,Paid to Dad,Iphone 15 Pro,,-987,987,4676.51,86.66
+4/7/2025,-$100.00,USAA S,transfer,,,,,-100,100,4576.51,86.66
+4/7/2025,$100.00,USAA C,transfer,,,,,100,100,4576.51,186.66
+4/7/2025,$83.99,USAA C,reimbursement,Lodging,SLO hotel,,,83.99,83.99,4576.51,270.65
+4/7/2025,-$54.62,USAA C,expense,Clothing,State Street,Second hand,,-54.62,54.62,4576.51,216.03
+4/7/2025,-$36.64,USAA C,expense,Transportation,Costco,Fuel,,-36.64,36.64,4576.51,179.39
+4/7/2025,-$17.19,USAA C,expense,Food,Hummus Republic,Eating out,,-17.19,17.19,4576.51,162.20
+4/7/2025,-$4.00,USAA C,expense,Parking,UCSB,,,-4,4,4576.51,158.20
+4/8/2025,$240.26,USAA C,income,Job,DREAM Lab,,,240.26,240.26,4576.51,398.46
+4/8/2025,$60.06,USAA S,income,Job,DREAM Lab,,,60.06,60.06,4636.57,398.46
+4/8/2025,-$75.77,USAA C,expense,Health,Wisdom Teeth,Financing,,-75.77,75.77,4636.57,322.69
+4/8/2025,-$9.00,USAA C,expense,Food,Blenders,Eating out,,-9,9,4636.57,313.69
+4/8/2025,-$7.80,USAA C,expense,Food,Hot dog stand,"Eating out, Fast food",,-7.8,7.8,4636.57,305.89
+4/9/2025,-$200.00,USAA S,transfer,,,,,-200,200,4436.57,305.89
+4/9/2025,$200.00,USAA C,transfer,,,,,200,200,4436.57,505.89
+4/9/2025,-$99.83,USAA C,expense,Food,Costco,Yosemite,,-99.83,99.83,4436.57,406.06
+4/9/2025,-$22.88,USAA C,expense,Food ,Corazon Cocina,,,-22.88,22.88,4436.57,383.18
+4/9/2025,-$22.00,USAA C,expense,Utilities,Wifi,,,-22,22,4436.57,361.18
+4/9/2025,-$7.59,USAA C,expense,Food,Costco,"Eating out, Fast food",,-7.59,7.59,4436.57,353.59
+4/10/2025,-$31.16,USAA C,expense,Transportation,Fuel Depot,"Yosemite, Fuel",,-31.16,31.16,4436.57,322.43
+4/10/2025,-$30.02,USAA C,expense,Transportation,Costco,"Yosemite, Fuel",,-30.02,30.02,4436.57,292.41
+4/10/2025,-$13.32,USAA C,expense,Entertainment,Camino Real Cinema,Minecraft Movie,,-13.32,13.32,4436.57,279.09
+4/10/2025,-$12.56,USAA C,expense,Food,Chipotle,"Eating out, Fast food",,-12.56,12.56,4436.57,266.53
+4/10/2025,-$8.70,USAA C,expense,Food,Cucas,"Eating out, Fast food",,-8.7,8.7,4436.57,257.83
+4/10/2025,-$8.70,USAA C,expense,Food,Cucas,"Eating out, Fast food",,-8.7,8.7,4436.57,249.13
+4/11/2025,$43.42,USAA C,reimbursement,Other,Venmo,,,43.42,43.42,4436.57,292.55
+4/11/2025,-$38.22,USAA C,expense,Utilities,Electricity,,,-38.22,38.22,4436.57,254.33
+4/11/2025,-$8.92,USAA C,expense,Wellness,North Fork Market,Yosemite,,-8.92,8.92,4436.57,245.41
+4/14/2025,-$300.00,USAA S,transfer,,,,,-300,300,4136.57,245.41
+4/14/2025,$300.00,USAA C,transfer,,,,,300,300,4136.57,545.41
+4/14/2025,-$138.57,USAA S,transfer,,,,,-138.57,138.57,3998.00,545.41
+4/14/2025,$138.57,USAA C,transfer,,,,,138.57,138.57,3998.00,683.98
+4/14/2025,-$100.00,USAA S,transfer,,,,,-100,100,3898.00,683.98
+4/14/2025,$100.00,USAA C,transfer,,,,,100,100,3898.00,783.98
+4/14/2025,$115.00,USAA C,reimbursement,Food,Hot pot,Eating out,,115,115,3898.00,898.98
+4/14/2025,$35.00,USAA C,reimbursement,Wellness,Sephora,,,35,35,3898.00,933.98
+4/14/2025,-$298.00,USAA S,expense,Transportation,Registration,Kia Niro,,-298,298,3600.00,933.98
+4/14/2025,-$242.69,USAA C,expense,Clothing,JC Penney,Charcoal suit,,-242.69,242.69,3600.00,691.29
+4/14/2025,-$129.60,USAA C,expense,Clothing,J Crew,,,-129.6,129.6,3600.00,561.69
+4/14/2025,-$123.84,USAA C,expense,Wellness,Sephora,,,-123.84,123.84,3600.00,437.85
+4/14/2025,-$115.61,USAA C,expense,Food,Hot Pot,,,-115.61,115.61,3600.00,322.24
+4/14/2025,-$50.25,USAA C,expense,Transportation,Sinclair,"Yosemite, Fuel",,-50.25,50.25,3600.00,271.99
+4/14/2025,-$35.00,USAA C,expense,Entertainment,Yosemite Park Access,Yosemite,,-35,35,3600.00,236.99
+4/14/2025,-$17.23,USAA C,expense,Food,Pizza,"Yosemite, Eating out, Fast food",,-17.23,17.23,3600.00,219.76
+4/14/2025,-$8.37,USAA C,expense,Food,Convenience store,"Yosemite, Beverage",,-8.37,8.37,3600.00,211.39
+4/15/2025,-$269.00,USAA S,transfer,,,,,-269,269,3331.00,211.39
+4/15/2025,$269.00,USAA C,transfer,,,,,269,269,3331.00,480.39
+4/15/2025,-$220.00,USAA C,expense,Clothing,Ding Tailoring,Charcoal suit,,-220,220,3331.00,260.39
+4/15/2025,-$95.00,USAA C,expense,Clothing,Alpha Thrift,Second hand,,-95,95,3331.00,165.39
+4/15/2025,-$49.00,USAA C,expense,Clothing,Ding Tailoring,,,-49,49,3331.00,116.39
+4/15/2025,-$16.31,USAA C,expense,Food,Dean Coffee,"Eating out, Beverage",,-16.31,16.31,3331.00,100.08
+4/15/2025,-$15.00,USAA C,expense,Other,Lauren Studios Photos,Graduation,,-15,15,3331.00,85.08
+4/15/2025,-$13.05,USAA C,expense,Food,Dean Coffee,Eating out,,-13.05,13.05,3331.00,72.03
+4/15/2025,-$8.70,USAA C,expense,Food,Cucas,"Eating out, Fast food",,-8.7,8.7,3331.00,63.33
+4/16/2025,-$775.00,USAA S,transfer,,,,,-775,775,2556.00,63.33
+4/16/2025,$775.00,USAA C,transfer,,,,,775,775,2556.00,838.33
+4/16/2025,-$100.00,USAA C,transfer,,,,,-100,100,2556.00,738.33
+4/16/2025,$100.00,USAA S,transfer,,,,,100,100,2656.00,738.33
+4/16/2025,-$33.00,USAA S,transfer,,,,,-33,33,2623.00,738.33
+4/16/2025,$33.00,USAA C,transfer,,,,,33,33,2623.00,771.33
+4/16/2025,-$48.00,USAA S,expense,Parking,UCSB,Ticket,,-48,48,2575.00,771.33
+4/16/2025,-$2.53,USAA C,expense,Food,In-n-Out,"Eating out, Fast food",,-2.53,2.53,2575.00,768.80
+4/17/2025,-$14.36,USAA C,expense,Clothing,Uniqlo,,,-14.36,14.36,2575.00,754.44
+4/17/2025,-$12.00,USAA C,expense,Transportation,Car wash,,,-12,12,2575.00,742.44
+4/18/2025,-$55.14,USAA C,expense,Clothing,Zara,,,-55.14,55.14,2575.00,687.30
+4/18/2025,-$27.48,USAA C,expense,Food,Chicken Guy,"Eating out, Fast food",,-27.48,27.48,2575.00,659.82
+4/18/2025,-$18.71,USAA C,expense,Food,Thai,Eating out,,-18.71,18.71,2575.00,641.11
+4/21/2025,$1004.00,USAA S,income,Tax return,,,,1004,1004,3579.00,641.11
+4/21/2025,-$73.22,USAA C,expense,Wellness,Target,,,-73.22,73.22,3579.00,567.89
+4/21/2025,-$68.00,USAA C,expense,CBD/THC,Farmacy,,,-68,68,3579.00,499.89
+4/21/2025,-$47.50,USAA C,expense,Wellness,Richies Barbershop,,,-47.5,47.5,3579.00,452.39
+4/21/2025,-$23.91,USAA C,expense,Other,Albertsons Propane,,,-23.91,23.91,3579.00,428.48
+4/21/2025,-$21.01,USAA C,expense,Food,Zocalo,"Eating out, Fast food",,-21.01,21.01,3579.00,407.47
+4/21/2025,-$9.50,USAA C,expense,Food,UCSB Concessions,"Eating out, Fast food",,-9.5,9.5,3579.00,397.97
+4/21/2025,$3.00,USAA C,reimbursement,ATM rebate,,,,3,3,3579.00,400.97
+4/22/2025,$80.71,USAA S,income,Job,DREAM Lab,,UNIVERSITY OF CA 250412B2X  ***********2297,80.71,80.71,3659.71,400.97
+4/22/2025,-$511.00,USAA S,expense,Transportation,Car payment,Kia Niro,Zelle: Dad,-511,511,3148.71,400.97
+4/22/2025,-$11.63,USAA C,expense,Food,Courtyard,Eating out,,-11.63,11.63,3148.71,389.34
+4/22/2025,-$6.53,USAA C,expense,Food,Lao's,"Eating out, Fast food",,-6.53,6.53,3148.71,382.81
+4/22/2025,-$6.39,USAA C,expense,Food,Woodstocks,"Eating out, Fast food",,-6.39,6.39,3148.71,376.42
+4/22/2025,-$4.03,USAA C,expense,Food,IV Deli,"Eating out, Beverage",,-4.03,4.03,3148.71,372.39
+4/22/2025,$322.85,USAA C,income,Job,DREAM Lab,,,322.85,322.85,3148.71,695.24
+4/23/2025,$16.00,USAA C,reimbursement,Other,Ben A,Yosemite,,16,16,3148.71,711.24
+4/23/2025,-$49.03,USAA C,expense,Food,Costco,Groceries,,-49.03,49.03,3148.71,662.21
+4/23/2025,-$47.09,USAA C,expense,Transportation,Fuel Depot,Fuel,,-47.09,47.09,3148.71,615.12
+4/23/2025,-$27.06,USAA C,expense,Food,Kyles Kitchen,"Eating out, Fast food",,-27.06,27.06,3148.71,588.06
+4/23/2025,-$10.88,USAA C,expense,Food,Panda Express,"Eating out, Fast food ",,-10.88,10.88,3148.71,577.18
+4/25/2025,$3.25,USAA C,reimbursement,ATM rebate,,,,3.25,3.25,3148.71,580.43
+4/25/2025,-$83.25,USAA C,withdrawal,Cash,,Bike,,-83.25,83.25,3148.71,497.18
+4/25/2025,-$46.00,USAA C,expense,Entertainment,Anela,Yosemite,,-46,46,3148.71,451.18
+4/25/2025,-$25.43,USAA C,expense,Transportation,ARCO,Fuel,,-25.43,25.43,3148.71,425.75
+4/25/2025,-$23.57,USAA C,expense,Food,Caje,"Eating out, Beverage",,-23.57,23.57,3148.71,402.18
+4/25/2025,-$13.00,USAA C,expense,Utilities,Electricity,,,-13,13,3148.71,389.18
+4/25/2025,-$9.98,USAA C,expense,Wellness,Target,,,-9.98,9.98,3148.71,379.20
+4/25/2025,-$3.00,USAA C,expense,Parking,State Street,,,-3,3,3148.71,376.20
+4/28/2025,-$146.00,USAA S,expense,Transportation,Car Registration,Kia Niro,Zelle: Dad,-146,146,3002.71,376.20
+4/28/2025,-$46.00,USAA C,expense,Error,Anela,,,-46,46,3002.71,330.20
+4/28/2025,$30.00,USAA C,reimbursement,Error,Anela,,,30,30,3002.71,360.20
+4/28/2025,-$15.00,USAA C,expense,Entertainment,UCSB Alumni Weekend,Networking,,-15,15,3002.71,345.20
+4/28/2025,-$4.30,USAA C,expense,Parking,UCSB,,,-4.3,4.3,3002.71,340.90
+4/28/2025,-$14.19,USAA C,expense,Alcohol,Keg n Bottle,,,-14.19,14.19,3002.71,326.71
+4/30/2025,$0.03,USAA S,income,Interest,USAA,,INTEREST PAID,0.03,0.03,3002.74,326.71
+4/30/2025,-$775.00,USAA S,expense,Rent,6640 Pasado,,Zelle: Acacia,-775,775,2227.74,326.71
+5/2/2025,-$23.25,USAA C,expense,Food,Costco,Groceries,,-23.25,23.25,2227.74,303.46
+5/2/2025,-$20.23,USAA C,expense,Food,Chipotle,Eating out,,-20.23,20.23,2227.74,283.23
+5/2/2025,-$6.62,USAA C,expense,Food,Trader Joes,Groceries,,-6.62,6.62,2227.74,276.61
+5/2/2025,$20.00,USAA C,reimbursement,Error,Anela,,,20,20,2227.74,296.61
+5/2/2025,-$5.99,USAA C,expense,Subscription,Spotify,,,-5.99,5.99,2227.74,290.62
+5/5/2025,-$173.00,USAA C,withdrawal,Cash,,,,-173,173,2227.74,117.62
+5/5/2025,-$68.07,USAA S,transfer,,,,USAA FUNDS TRANSFER DB,-68.07,68.07,2159.67,117.62
+5/5/2025,$68.07,USAA C,transfer,,,,,68.07,68.07,2159.67,185.69
+5/5/2025,$3.00,USAA C,reimbursement,ATM rebate,,,,3,3,2159.67,188.69
+5/5/2025,-$75.77,USAA C,expense,Health,Wisdom Teeth,Financing,,-75.77,75.77,2159.67,112.92
+5/5/2025,-$40.20,USAA C,expense,Wellness,Amazon,,,-40.2,40.2,2159.67,72.72
+5/5/2025,-$25.00,USAA C,expense,Entertainment,The Getty,,,-25,25,2159.67,47.72
+5/5/2025,-$17.51,USAA C,expense,Food,Freebirds,Eating out,,-17.51,17.51,2159.67,30.21
+5/5/2025,-$14.72,USAA C,expense,Food,IV Deli,"Eating out, Fast food",,-14.72,14.72,2159.67,15.49
+5/5/2025,-$12.49,USAA C,expense,Food,Jersey Mikes,Eating out,,-12.49,12.49,2159.67,3.00
+5/6/2025,$401.68,USAA C,income,Job,DREAM Lab,,,401.68,401.68,2159.67,404.68
+5/6/2025,$100.42,USAA S,income,Job,DREAM Lab,,UNIVERSITY OF CA 250426B1X  ***********2297,100.42,100.42,2260.09,404.68
+5/7/2025,-$4.04,USAA C,expense,Food,IV Deli,Beverage,,-4.04,4.04,2260.09,400.64
+5/7/2025,-$2.49,USAA C,expense,Food,Cucas,Beverage,,-2.49,2.49,2260.09,398.15
+5/8/2025,-$38.26,USAA C,expense,Transportation,Fuel Depot,Fuel,,-38.26,38.26,2260.09,359.89
+5/8/2025,-$11.63,USAA C,expense,Food,Courtyard,Eating out,,-11.63,11.63,2260.09,348.26
+5/9/2025,-$23.96,USAA C,expense,Food,Better Buzz,Beverage,,-23.96,23.96,2260.09,324.30
+5/9/2025,-$10.00,USAA C,expense,Transportation,Car wash,,,-10,10,2260.09,314.30
+5/9/2025,-$9.05,USAA C,expense,Food,Getty,Eating out,,-9.05,9.05,2260.09,305.25
+5/9/2025,-$5.75,USAA C,expense,Food,Mcdonalds,"Eating out, Fast food",,-5.75,5.75,2260.09,299.50
+5/12/2025,-$200.00,USAA S,transfer,,,,USAA FUNDS TRANSFER DB,-200,200,2060.09,299.50
+5/12/2025,$200.00,USAA C,transfer,,,,,200,200,2060.09,499.50
+5/12/2025,-$169.00,USAA C,expense,Gift,Coach,Mother’s Day,,-169,169,2060.09,330.50
+5/12/2025,-$15.17,USAA C,expense,Food,Phamous Cafe,Eating out,,-15.17,15.17,2060.09,315.33
+5/12/2025,-$11.26,USAA C,expense,Food,In-n-Out,"Eating out, Fast food",,-11.26,11.26,2060.09,304.07
+5/12/2025,-$8.98,USAA C,expense,Food,Albertsons,Groceries,,-8.98,8.98,2060.09,295.09
+5/12/2025,-$5.99,USAA C,expense,Food,Trader Joes,Groceries,,-5.99,5.99,2060.09,289.10
+5/12/2025,-$4.30,USAA C,expense,Parking,UCSB,,,-4.3,4.3,2060.09,284.80
+5/13/2025,$3.00,USAA C,reimbursement,Other,Ben A,,,3,3,2060.09,287.80
+5/13/2025,-$22.28,USAA C,expense,Alcohol,Costco,,,-22.28,22.28,2060.09,265.52
+5/13/2025,-$16.77,USAA C,expense,Clothing,Vans,,,-16.77,16.77,2060.09,248.75
+5/13/2025,-$13.20,USAA C,expense,Food,Cafe Luxxe,"Eating out, Beverage",,-13.2,13.2,2060.09,235.55
+5/13/2025,-$10.75,USAA C,expense,Food,Root Burger,"Eating out, Fast food",,-10.75,10.75,2060.09,224.80
+5/14/2025,-$119.40,USAA S,expense,Education,Aceable Agent,Howard Financial,Aceable.com      ACEABLE* C ***********D4W6,-119.4,119.4,1940.69,224.80
+5/14/2025,-$4.00,USAA C,expense,Food,Slo Do,"Eating out, Fast food",,-4,4,1940.69,220.80
+5/15/2025,-$800.00,USAA S,transfer,,,,USAA FUNDS TRANSFER DB,-800,800,1140.69,220.80
+5/15/2025,$800.00,USAA C,transfer,,,,,800,800,1140.69,1020.80
+5/15/2025,-$800.00,USAA C,expense,Investing,Moonpay Metamask,,,-800,800,1140.69,220.80
+5/15/2025,-$139.23,USAA C,expense,Business,Unstoppable Domains,Howard Financial,,-139.23,139.23,1140.69,81.57
+5/15/2025,-$30.00,USAA S,expense,Entertainment,Cinco de Mayo,,Zelle: Ben A,-30,30,1110.69,81.57
+5/15/2025,-$12.66,USAA C,expense,Food,Zocalo,"Eating out, Fast food",,-12.66,12.66,1110.69,68.91
+5/16/2025,-$44.00,USAA C,withdrawal,Cash,,Surf Shop,,-44,44,1110.69,24.91
+5/16/2025,$4.00,USAA C,reimbursement,ATM rebate,,,,4,4,1110.69,28.91
+5/16/2025,$1000.00,USAA C,income,Investing,Robinhood,,,1000,1000,1110.69,1028.91
+5/16/2025,-$19.57,USAA C,expense,Entertainment,Biergarten,,,-19.57,19.57,1110.69,1009.34
+5/16/2025,-$9.77,USAA C,expense,Food,Trader Joes,Groceries,,-9.77,9.77,1110.69,999.57
+5/19/2025,-$48.65,USAA C,expense,Transportation,VP Racing,Fuel,,-48.65,48.65,1110.69,950.92
+5/19/2025,-$22.00,USAA C,expense,Entertainment,Buena Lanes,,,-22,22,1110.69,928.92
+5/19/2025,-$13.80,USAA C,expense,Food,Backyard Bowls,Eating out,,-13.8,13.8,1110.69,915.12
+5/19/2025,-$2.60,USAA C,expense,Food,Primo Water,,,-2.6,2.6,1110.69,912.52
+5/20/2025,$1000.00,USAA C,income,Investing,Robinhood,,,1000,1000,1110.69,1912.52
+5/20/2025,$522.54,USAA C,income,Job,DREAM Lab,,,522.54,522.54,1110.69,2435.06
+5/20/2025,$130.64,USAA S,income,Job,DREAM Lab,,UNIVERSITY OF CA 250510B2X  ***********2297,130.64,130.64,1241.33,2435.06
+5/20/2025,-$510.00,USAA S,expense,Transportation,Car Payment,Kia Niro,Zelle: Dad,-510,510,731.33,2435.06
+5/20/2025,-$69.00,USAA S,expense,Transportation,Electrify America,Charging,Zelle: Dad,-69,69,662.33,2435.06
+5/20/2025,-$18.32,USAA C,expense,Wellness,Dollartree,Drew Soccer,,-18.32,18.32,662.33,2416.74
+5/20/2025,-$16.15,USAA C,expense,Food,Chipotle,Eating out,,-16.15,16.15,662.33,2400.59
+5/20/2025,-$6.48,USAA C,expense,Food,Chop Chinese,"Eating out, Fast food",,-6.48,6.48,662.33,2394.11
+5/21/2025,-$2000.00,USAA C,transfer,,,,,-2000,2000,662.33,394.11
+5/21/2025,$2000.00,USAA S,transfer,,,,USAA FUNDS TRANSFER CR,2000,2000,2662.33,394.11
+5/21/2025,-$36.11,USAA C,expense,Food,Thai Kitchen,Eating out,,-36.11,36.11,2662.33,358.00
+5/21/2025,-$10.70,USAA C,expense,Wellness,University Center,,,-10.7,10.7,2662.33,347.30
+5/21/2025,-$3.30,USAA C,expense,Parking,UCSB,,,-3.3,3.3,2662.33,344.00
+5/22/2025,-$49.45,USAA C,expense,Wellness,Target,,,-49.45,49.45,2662.33,294.55
+5/22/2025,-$39.23,USAA C,expense,Transportation,Electrify America,Charging,,-39.23,39.23,2662.33,255.32
+5/22/2025,-$20.20,USAA C,expense,Business,Youware,Howard Financial,,-20.2,20.2,2662.33,235.12
+5/23/2025,-$6.80,USAA C,expense,Food,Kaiju,Beverage,,-6.8,6.8,2662.33,228.32
+5/27/2025,-$24.00,USAA C,expense,Utilities,Electricity,,,-24,24,2662.33,204.32
+5/27/2025,-$16.15,USAA C,expense,Food,Chipotle,Eating out,,-16.15,16.15,2662.33,188.17
+5/27/2025,-$13.37,USAA C,expense,Food,Sprouts,Groceries,,-13.37,13.37,2662.33,174.80
+5/27/2025,-$12.00,USAA C,expense,Transportation,Car wash,,,-12,12,2662.33,162.80
+5/27/2025,-$11.63,USAA C,expense,Food,Snag,"Eating out, Fast food, Beverage",,-11.63,11.63,2662.33,151.17
+5/27/2025,-$11.00,USAA S,expense,wifi,,,Zelle: Ben A,-11,11,2651.33,151.17
+5/27/2025,-$6.57,USAA C,expense,Food,In-n-Out,"Eating out, Fast food",,-6.57,6.57,2651.33,144.60
+5/27/2025,-$5.95,USAA C,expense,Food,Bagel Cafe,Eating out,,-5.95,5.95,2651.33,138.65
+5/27/2025,-$5.75,USAA C,expense,Food,Old Town Coffee,Beverage,,-5.75,5.75,2651.33,132.90
+5/27/2025,-$2.53,USAA C,expense,Food,In-n-Out,"Eating out, Fast food",,-2.53,2.53,2651.33,130.37
+5/29/2025,-$4.31,USAA C,expense,Food ,Panda Express,"Eating out, Fast food",,-4.31,4.31,2651.33,126.06
+5/30/2025,$0.02,USAA S,income,Interest,USAA,,INTEREST PAID,0.02,0.02,2651.35,126.06
+5/30/2025,-$39.75,USAA S,expense,Transportation,Electrify America,Charging,Zelle: Dad,-39.75,39.75,2611.60,126.06
+5/30/2025,-$15.62,USAA C,expense,Food,In-n-Out,"Eating out, Fast food",,-15.62,15.62,2611.60,110.44
+6/2/2025,-$387.50,USAA S,expense,Rent,6640 Pasado,,Zelle: Acacia,-387.5,387.5,2224.10,110.44
+6/2/2025,-$13.65,USAA C,expense,Nicotine,ARCO,Newports,,-13.65,13.65,2224.10,96.79
+6/2/2025,-$11.00,USAA C,expense,Wellness,University Center,,,-11,11,2224.10,85.79
+6/2/2025,-$10.01,USAA C,expense,Food,Mcdonalds,"Eating out, Fast food",,-10.01,10.01,2224.10,75.78
+6/2/2025,-$9.28,USAA C,expense,Food,7-Eleven,Beverage,,-9.28,9.28,2224.10,66.50
+6/2/2025,-$7.90,USAA C,expense,Food,Slo Do,Beverage,,-7.9,7.9,2224.10,58.60
+6/2/2025,-$5.99,USAA C,expense,Subscription,Spotify,,,-5.99,5.99,2224.10,52.61
+6/3/2025,$307.82,USAA C,Income,Job,DREAM Lab,,UNIVERSITY OF CA 250524B1X  ***********2297,307.82,307.82,2224.10,360.43
+6/3/2025,$76.96,USAA S,income,Job,DREAM Lab,,UNIVERSITY OF CA 250524B1X  ***********2297,76.96,76.96,2301.06,360.43
+6/3/2025,-$8.50,USAA C,expense,Alcohol,Keg n Bottle,,KEG N BOTTLE SANTA BARB  GOLETA       CA,-8.5,8.5,2301.06,351.93
+6/3/2025,-$6.45,USAA C,expense,Food,Wingstop,"Eating out, Fast food",WINGSTOP 2012            ARCADIA      CA,-6.45,6.45,2301.06,345.48
+6/3/2025,-$4.29,USAA C,expense,Food,Arbor,"Eating out, Fast food",UCSB UNIV CNTR ARB Q13   SANTA BARBARACA,-4.29,4.29,2301.06,341.19
+6/4/2025,-$42.75,USAA S,expense,Transportation,Electrify America,Charging,Zelle: Dad,-42.75,42.75,2258.31,341.19
+6/4/2025,-$14.52,USAA C,expense,Food,Albertsons,Groceries,ALBERTSONS #0354         GOLETA       CA,-14.52,14.52,2258.31,326.67
+6/4/2025,-$13.34,USAA C,expense,Food,Caje,Eating out,SQ *CAJE COFFEE          Goleta       CA,-13.34,13.34,2258.31,313.33
+6/4/2025,-$8.78,USAA C,expense,Wellness,Target,Groceries,TARGET        00028720   GOLETA       CA,-8.78,8.78,2258.31,304.55
+6/4/2025,-$6.02,USAA C,expense,Wellness,University Center,,UCSB UNIV CTR BOOKSTORE  SANTA BARBARACA,-6.02,6.02,2258.31,298.53
+6/5/2025,-$304.00,USAA C,withdrawal,Cash,,,BANK OF AMERICA          SANTA BARBARACA,-304,304,2258.31,-5.47
+6/5/2025,-$300.00,USAA S,transfer,,,,USAA FUNDS TRANSFER DB,-300,300,1958.31,-5.47
+6/5/2025,$300.00,USAA C,transfer,,,,USAA FUNDS TRANSFER CR,300,300,1958.31,294.53
+6/5/2025,$4.00,USAA C,reimbursement,ATM rebate,,,ATM REBATE,4,4,1958.31,298.53
+6/5/2025,-$511.00,USAA S,expense,Transportation,Car Payment,Kia Niro,Zelle: Dad,-511,511,1447.31,298.53
+6/5/2025,-$75.77,USAA C,expense,Health,Wisdom Teeth,Financing,Cherry Technologies      888-8397171  CA,-75.77,75.77,1447.31,222.76
+6/5/2025,-$9.27,USAA C,expense,Food,Panda Express,"Eating out, Fast food",PANDA EXPRESS #260       SANTA BARBARACA,-9.27,9.27,1447.31,213.49
+6/5/2025,-$5.59,USAA C,expense,Food,University Center,Beverage,UCSB UNIV CNTR CTC       SANTA BARBARACA,-5.59,5.59,1447.31,207.90
+6/6/2025,$20.47,USAA C,reimbursement,Entertainment,Play It Again Sports ,Second hand,PLAY IT AGAIN SPORTS S   SANTA BARBARACA,20.47,20.47,1447.31,228.37
+6/6/2025,-$108.47,USAA C,expense,Entertainment,Play It Again Sports ,Second hand,PLAY IT AGAIN SPORTS S   SANTA BARBARACA,-108.47,108.47,1447.31,119.90
+6/6/2025,-$3.00,USAA C,expense,Parking,UCSB,,UCSB TPS CAMPUS PD       GOLETA       CA,-3,3,1447.31,116.90
+6/6/2025,-$1.63,USAA C,expense,Food,Costco,"Eating out, Fast food",COSTCO WHSE #0474        GOLETA       CA,-1.63,1.63,1447.31,115.27
+6/6/2025,-$0.20,USAA C,expense,Food,Vons,Groceries,VONS #3326               GOLETA       CA,-0.2,0.2,1447.31,115.07
+6/9/2025,-$403.00,USAA C,withdrawal,Cash,,,MONTECITO BANK           SANTA BARBARACA,-403,403,1447.31,-287.93
+6/9/2025,-$500.00,USAA S,transfer,,,,USAA FUNDS TRANSFER DB,-500,500,947.31,-287.93
+6/9/2025,$500.00,USAA C,transfer,,,,USAA FUNDS TRANSFER CR,500,500,947.31,212.07
+6/9/2025,$2.00,USAA C,reimbursement,ATM rebate,,,ATM REBATE,2,2,947.31,214.07
+6/9/2025,-$32.14,USAA C,expense,Food,Kyles Kitchen,"Eating out, Fast food",TST* KYLE'S KITCHEN - H  GOLETA       CA,-32.14,32.14,947.31,181.93
+6/9/2025,-$22.46,USAA C,expense,Food,Taco Bell,"Eating out, Fast food",TACO BELL 027773         GOLETA       CA,-22.46,22.46,947.31,159.47
+6/9/2025,-$16.40,USAA C,expense,Clothing,Ace Rivington,,SP ACE RIVINGTON         180-55601580 CA,-16.4,16.4,947.31,143.07
+6/9/2025,-$12.18,USAA C,expense,Wellness,Albertsons,Groceries,ALBERTSONS #0354         GOLETA       CA,-12.18,12.18,947.31,130.89
+6/9/2025,-$10.66,USAA C,expense,Food,Chipotle,Eating out,CHIPOTLE 1459            GOLETA       CA,-10.66,10.66,947.31,120.23
+6/9/2025,-$3.82,USAA C,expense,Food,South Coast Deli,Beverage,SOUTH COAST DELI CARRIL  SANTA BARBARACA,-3.82,3.82,947.31,116.41
+6/10/2025,-$43.71,USAA C,expense,Transportation,Fuel Depot,Fuel,STORKE FUEL DEPOT        Goleta       CA,-43.71,43.71,947.31,72.70
+6/10/2025,-$1.00,USAA C,expense,Other,Been Verified,,BVC*BeenVerified.com     www.beenverifNY,-1,1,947.31,71.70
+6/11/2025,-$12.50,USAA C,expense,Food,Old Town Coffee,"Eating out, Fast food, Beverage",SQ *OLD TOWN COFFEE & R  Goleta       CA,-12.5,12.5,947.31,59.20
+6/11/2025,-$4.00,USAA C,expense,Parking,UCSB,,UCSB TPS CAMPUS PD       GOLETA       CA,-4,4,947.31,55.20
+6/12/2025,-$47.31,USAA S,transfer,,,,USAA FUNDS TRANSFER DB,-47.31,47.31,900.00,55.20
+6/12/2025,$47.31,USAA C,transfer,,,,USAA FUNDS TRANSFER CR,47.31,47.31,900.00,102.51
+6/12/2025,-$18.50,USAA C,expense,Food,Slo Do,Gift,SQ *SLO DONUT COMPANY    GOLETA       CA,-18.5,18.5,900.00,84.01
+6/12/2025,-$11.81,USAA C,expense,Utilities,Electricity,,APPLE CASH SENT MONEY    1INFINITELOOPCA,-11.81,11.81,900.00,72.20
+6/13/2025,-$24.89,USAA C,expense,Wellness,Daiso,,DAISO - THE MARKETPLAC   OXNARD       CA,-24.89,24.89,900.00,47.31
+6/13/2025,-$9.11,USAA C,expense,Wellness,Daiso,,DAISO - THE MARKETPLAC   OXNARD       CA,-9.11,9.11,900.00,38.20
+6/16/2025,-$137.51,USAA S,transfer,,,,USAA FUNDS TRANSFER DB,-137.51,137.51,762.49,38.20
+6/16/2025,$137.51,USAA C,transfer,,,,USAA FUNDS TRANSFER CR,137.51,137.51,762.49,175.71
+6/16/2025,-$100.00,USAA S,transfer,,,,USAA FUNDS TRANSFER DB,-100,100,662.49,175.71
+6/16/2025,$100.00,USAA C,transfer,,,,USAA FUNDS TRANSFER CR,100,100,662.49,275.71
+6/16/2025,$4.36,USAA C,reimbursement,Food,Better Buzz,,Zelle: Derick Howard,4.36,4.36,662.49,280.07
+6/16/2025,-$35.22,USAA S,expense,Transportation,Electrify America,Charging,Zelle: Dad,-35.22,35.22,627.27,280.07
+6/16/2025,-$34.85,USAA C,expense,Food,Jack in the Box,"Eating out, Fast food",JACK IN THE BOX 0159     GOLETA       CA,-34.85,34.85,627.27,245.22
+6/16/2025,-$21.72,USAA C,expense,Food,Dean Coffee,"Eating out, Beverage",SQ *DEAN: A COFFEE SHOP  GOLETA       CA,-21.72,21.72,627.27,223.50
+6/16/2025,-$13.22,USAA C,expense,Food,Dune Coffee,Beverage,SQ *STATE ST - DUNE COF  Santa BarbaraCA,-13.22,13.22,627.27,210.28
+6/16/2025,-$6.00,USAA C,expense,Parking,State Street,,CITY OF SB PARKING       SANTA BARBARACA,-6,6,627.27,204.28
+6/16/2025,-$1.62,USAA C,expense,CBD/THC,Bevmo,Lighter,BEVERAGES & MORE #144    GOLETA       CA,-1.62,1.62,627.27,202.66
+6/17/2025,$337.86,USAA C,income,Job,DREAM Lab,,UNIVERSITY OF CA 250607B2X  ***********2297,337.86,337.86,627.27,540.52
+6/17/2025,$84.47,USAA S,income,Job,DREAM Lab,,UNIVERSITY OF CA 250607B2X  ***********2297,84.47,84.47,711.74,540.52
+6/17/2025,-$137.51,USAA C,expense,Clothing,Ace Rivington,Dark jeans,SP ACE RIVINGTON         180-55601580 CA,-137.51,137.51,711.74,403.01
+6/17/2025,-$78.28,USAA C,expense,Wellness,Target,Groceries,TARGET STORE T-2872      Goleta       CA,-78.28,78.28,711.74,324.73
+6/17/2025,-$37.39,USAA C,expense,Alcohol,The Cruisery,,TST* THE CRUISERY        SANTA BARBARACA,-37.39,37.39,711.74,287.34
+6/17/2025,-$8.47,USAA C,expense,Food,Metro 4 popcorn,"Eating out, Fast food",METRO 4 THEATRE          SANTA BARBARACA,-8.47,8.47,711.74,278.87
+6/17/2025,-$3.75,USAA C,expense,Food,Starbucks,Beverage,STARBUCKS STORE 09344    SANTA BARBARACA,-3.75,3.75,711.74,275.12
+6/18/2025,-$511.00,USAA S,expense,Transportation,Car Payment,Kia Niro,Zelle: Dad,-511,511,200.74,275.12
+6/18/2025,-$41.06,USAA C,expense,Transportation,Fuel Depot,"Fuel, Gift",STORKE FUEL DEPOT        Goleta       CA,-41.06,41.06,200.74,234.06
+6/18/2025,-$5.98,USAA C,expense,Alcohol,Sushi Ai,Beverage,SQ *SUSHI AI             Goleta       CA,-5.98,5.98,200.74,228.08
+6/20/2025,$13.13,USAA C,reimbursement,Furniture,Home Depot,,THE HOME DEPOT #1028     TEMECULA     CA,13.13,13.13,200.74,241.21
+6/20/2025,-$30.44,USAA C,expense,Food,Tacos El Diablo,"Eating out, Fast food",TST*TACOS EL DIABLO      Ventura      CA,-30.44,30.44,200.74,210.77
+6/20/2025,-$30.00,USAA C,expense,Furniture,Mirror,,APPLE CASH SENT MONEY    1INFINITELOOPCA,-30,30,200.74,180.77
+6/20/2025,-$29.82,USAA C,expense,Furniture,Home Depot,Armoire,THE HOME DEPOT #1028     TEMECULA     CA,-29.82,29.82,200.74,150.95
+6/20/2025,-$25.45,USAA C,expense,Transportation,Amtrak,,AMTRAK .COM 16907435535  WASHINGTON   DC,-25.45,25.45,200.74,125.50
+6/20/2025,-$23.76,USAA C,expense,Furniture,Home Depot,Armoire,THE HOME DEPOT #1028     TEMECULA     CA,-23.76,23.76,200.74,101.74
+6/20/2025,-$12.00,USAA C,expense,Utilities,Electricity,,APPLE CASH SENT MONEY    1INFINITELOOPCA,-12,12,200.74,89.74
+6/23/2025,-$100.74,USAA S,transfer,,,,USAA FUNDS TRANSFER DB,-100.74,100.74,100.00,89.74
+6/23/2025,$100.74,USAA C,transfer,,,,USAA FUNDS TRANSFER CR,100.74,100.74,100.00,190.48
+6/23/2025,$80.00,USAA C,reimbursement,Food,Yanagi Sushi,Eating out,Zelle: Anela Viktoria Guevarra,80,80,100.00,270.48
+6/23/2025,-$80.03,USAA C,expense,Food,Yanagi Sushi,Eating out,YANAGI SUSHI INC         PASO ROBLES  CA,-80.03,80.03,100.00,190.45
+6/23/2025,-$32.94,USAA C,expense,Utilities,Water,,APPLE CASH SENT MONEY    1INFINITELOOPCA,-32.94,32.94,100.00,157.51
+6/23/2025,-$20.20,USAA C,expense,Business,Youware,Howard Financial,YOUWARE PRO              WANCHAI,-20.2,20.2,100.00,137.31
+6/23/2025,-$16.45,USAA C,expense,Food,Bonchon,"Eating out, Fast food",BONCHON STEVENSON RANCH  STEVENSON RANCA,-16.45,16.45,100.00,120.86
+6/23/2025,-$8.53,USAA C,expense,Food,Ralphs,Groceries,RALPHS #0757             STEVENSON RANCA,-8.53,8.53,100.00,112.33
+6/23/2025,-$7.65,USAA C,expense,Food,Ruby Thai,"Eating out, Fast food",RUBY THAI KITCHEN        SANTA CLARA  CA,-7.65,7.65,100.00,104.68
+6/23/2025,-$6.00,USAA C,expense,Transportation,Car wash,,SOAPY SUDS CAR WASH      SANTA CLARITACA,-6,6,100.00,98.68
+6/23/2025,-$0.82,USAA C,expense,Transportation,Chargepoint,Charging,CHARGEPOINT 54           CAMPBELL     CA,-0.82,0.82,100.00,97.86
+6/24/2025,-$39.36,USAA C,expense,Transportation,Electrify America,,Nyx*8336322778 ELECTRIF  HUNT VALLEY  MD,-39.36,39.36,100.00,58.50
+6/24/2025,-$14.38,USAA C,expense,Food,Philz,"Eating out, Fast food, Beverage",SQ *PHILZ COFFEE         Studio City  CA,-14.38,14.38,100.00,44.12
+6/27/2025,-$18.00,USAA S,expense,Entertainment,Stampede (Derick),,Zelle: Derick Howard,-18,18,82.00,44.12
+6/30/2025,$250.00,USAA C,income,Other,Dan Graduation,,USAA FUNDS TRANSFER CR,250,250,82.00,294.12
+6/30/2025,$0.01,USAA S,income,Interest,USAA,,INTEREST PAID,0.01,0.01,82.01,294.12
+6/30/2025,-$20.00,USAA S,expense,Business,Open AI (Derick),,Zelle: Derick Howard,-20,20,62.01,294.12
+6/30/2025,-$19.67,USAA C,expense,Alcohol,Costco,,COSTCO WHSE #0491        TEMECULA     CA,-19.67,19.67,62.01,274.45
+6/30/2025,-$13.20,USAA C,expense,Food,Jam Jam Tea,Beverage,`,-13.2,13.2,62.01,261.25
+7/1/2025,$160.00,USAA C,reimbursement,Other,Passport Refund,,DEPOSIT@MOBILE,160,160,62.01,421.25
+7/1/2025,$244.01,USAA C,income,Job,DREAM Lab,,UNIVERSITY OF CA 250621B1X  ***********2297,244.01,244.01,62.01,665.26
+7/1/2025,$61.00,USAA S,income,Job,DREAM Lab,,UNIVERSITY OF CA 250621B1X  ***********2297,61,61,123.01,665.26
+7/1/2025,-$20.00,USAA C,expense,Subscription,Open AI,Howard Financial,OPENAI *CHATGPT SUBSCR   OPENAI.COM   CA,-20,20,123.01,645.26
+7/1/2025,-$5.09,USAA C,expense,Food,Mcdonalds,"Eating out, Fast food",McDonalds 36267          TEMECULA     CA,-5.09,5.09,123.01,640.17
+7/2/2025,-$14.00,USAA C,expense,Food,Board and Brew,Eating out,BOARD AND BREW DEL MAR   858-4811021  CA,-14,14,123.01,626.17
+7/2/2025,-$8.57,USAA C,expense,Food,Golden Bagel,Beverage,GOLDEN BAGEL             SAN DIEGO    CA,-8.57,8.57,123.01,617.60
+7/2/2025,-$5.99,USAA C,expense,Subscription,Spotify,,SPOTIFY                  877-778-1161 NY,-5.99,5.99,123.01,611.61
+7/3/2025,-$345.00,USAA C,expense,Health,F19 Gym Membership,,5621 FITNESS 19          TEMECULA     CA,-345,345,123.01,266.61
+7/3/2025,-$39.64,USAA C,expense,Clothing,Hollister,,HOLLISTER #395 71 FORTU  IRVINE       CA,-39.64,39.64,123.01,226.97
+7/3/2025,-$38.73,USAA C,expense,Furniture,Amazon,Armoire,AMAZON MKTPL*N307J3090   Amzn.com/billWA,-38.73,38.73,123.01,188.24
+7/7/2025,-$100.00,USAA S,transfer,,,,USAA FUNDS TRANSFER DB,-100,100,23.01,188.24
+7/7/2025,$100.00,USAA C,transfer,,,,USAA FUNDS TRANSFER CR,100,100,23.01,288.24
+7/7/2025,-$2.01,USAA S,transfer,,,,USAA FUNDS TRANSFER DB,-2.01,2.01,21.00,288.24
+7/7/2025,$2.01,USAA C,transfer,,,,USAA FUNDS TRANSFER CR,2.01,2.01,21.00,290.25
+7/7/2025,$638.27,USAA C,income,Investing,Sardine Metamask,,FBO Sardine AI C Sardine AI ***********,638.27,638.27,21.00,928.52
+7/7/2025,-$120.00,USAA C,expense,Transportation,Electrify America (zelle),Charging,Zelle: Dad,-120,120,21.00,808.52
+7/7/2025,-$75.77,USAA C,expense,Health,Wisdom Teeth,Financing,Cherry Technologies      888-8397171  CA,-75.77,75.77,21.00,732.75
+7/7/2025,-$35.56,USAA C,expense,Food,Siam Station,Eating out,SIAM STATION             IRVINE       CA,-35.56,35.56,21.00,697.19
+7/7/2025,-$16.75,USAA C,expense,Education,Amazon,Books,AMAZON MKTPL*N38417UP1   Amzn.com/billWA,-16.75,16.75,21.00,680.44
+7/7/2025,-$15.83,USAA C,expense,Food,Pepper Lunch,Eating out,PEPPER LUNCH             IRVINE       CA,-15.83,15.83,21.00,664.61
+7/7/2025,-$12.99,USAA C,expense,Entertainment,Asylum Surf Shop,Surfing,LS ASYLUM SURF SHOP      161-95073533 CA,-12.99,12.99,21.00,651.62
+7/7/2025,-$11.00,USAA S,expense,Utilities,Wifi,,Zelle: Ben A,-11,11,10.00,651.62
+7/7/2025,-$10.00,USAA S,expense,Food,Joliebees,"Eating out, Fast food",Zelle: Anela,-10,10,0.00,651.62
+7/7/2025,-$5.39,USAA C,expense,Food ,Mcdonalds,"Eating out, Fast food",McDonalds 11202          IRVINE       CA,-5.39,5.39,0.00,646.23
+7/7/2025,-$3.99,USAA C,expense,Food,Better Buzz,Beverage,TST* BETTER BUZZ COFFEE  TEMECULA     CA,-3.99,3.99,0.00,642.24
+7/8/2025,-$4.34,USAA C,expense,Food,Trader Joes,Groceries,TRADER JOE S #10 406             070825,-4.34,4.34,0.00,637.90
