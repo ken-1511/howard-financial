@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Settings | Howard Financial</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --color-primary: #8338ec;
+      --color-primary-light: #9c5ff2;
+      --color-primary-dark: #6d1dd9;
+      --color-secondary: #0A8754;
+      --color-secondary-light: #10A76A;
+      --color-secondary-dark: #076B42;
+      --color-accent: #F28D35;
+      --color-accent-light: #F6A25C;
+      --color-accent-dark: #D77621;
+      --color-error: #D64045;
+      --color-error-light: #E06367;
+      --color-error-dark: #B83035;
+      --color-neutral: #3F88C5;
+      --color-neutral-light: #5E9DD1;
+      --color-neutral-dark: #2D6EA8;
+      --color-withdrawal: #9C27B0;
+      --color-withdrawal-light: #BA68C8;
+      --color-withdrawal-dark: #7B1FA2;
+      --color-background: #F6F8FA;
+      --color-surface: #FFFFFF;
+      --color-text-primary: #2C3E50;
+      --color-text-secondary: #546E7A;
+      --color-text-tertiary: #90A4AE;
+      --color-border: #E1E8ED;
+      --shadow-color: #8338ec20;
+      
+      /* Dark mode colors */
+      --dark-color-background: #121212;
+      --dark-color-surface: #1E1E1E;
+      --dark-color-text-primary: #FFFFFF;
+      --dark-color-text-secondary: #B0B0B0;
+      --dark-color-text-tertiary: #777777;
+      --dark-color-border: #333333;
+    }
+    
+    * {
+      font-family: 'Inter', sans-serif;
+    }
+    
+    body {
+      background: var(--color-background);
+      color: var(--color-text-primary);
+      transition: all 0.3s ease;
+    }
+    
+    body.dark {
+      background: var(--dark-color-background);
+      color: var(--dark-color-text-primary);
+    }
+    
+    body.dark .settings-card,
+    body.dark .sidebar-nav {
+      background: var(--dark-color-surface);
+      border-color: var(--dark-color-border);
+    }
+    
+    body.dark .text-gray-600 {
+      color: var(--dark-color-text-secondary) !important;
+    }
+    
+    body.dark .text-gray-500 {
+      color: var(--dark-color-text-tertiary) !important;
+    }
+    
+    .settings-card {
+      background: var(--color-surface);
+      border-radius: 16px;
+      padding: 24px;
+      box-shadow: 0 4px 20px var(--shadow-color);
+      border: 1px solid var(--color-border);
+      margin-bottom: 24px;
+    }
+    
+    .sidebar-nav {
+      background: var(--color-surface);
+      border-right: 1px solid var(--color-border);
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.03);
+    }
+    
+    .nav-link {
+      padding: 12px 20px;
+      border-radius: 12px;
+      margin: 0 8px;
+      transition: all 0.2s ease;
+      text-decoration: none;
+      color: var(--color-text-secondary);
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    
+    .nav-link:hover {
+      background: rgba(131, 56, 236, 0.05);
+      color: var(--color-primary);
+      text-decoration: none;
+    }
+    
+    .nav-link.active {
+      background: var(--color-primary);
+      color: white;
+    }
+    
+    .nav-link svg {
+      width: 20px;
+      height: 20px;
+    }
+    
+    .brand-text {
+      background: linear-gradient(135deg, var(--color-primary), var(--color-primary-light));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      font-weight: 700;
+    }
+    
+    .switch {
+      position: relative;
+      display: inline-block;
+      width: 60px;
+      height: 34px;
+    }
+    
+    .switch input {
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+    
+    .slider {
+      position: absolute;
+      cursor: pointer;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #ccc;
+      transition: .4s;
+      border-radius: 34px;
+    }
+    
+    .slider:before {
+      position: absolute;
+      content: "";
+      height: 26px;
+      width: 26px;
+      left: 4px;
+      bottom: 4px;
+      background-color: white;
+      transition: .4s;
+      border-radius: 50%;
+    }
+    
+    input:checked + .slider {
+      background-color: var(--color-primary);
+    }
+    
+    input:focus + .slider {
+      box-shadow: 0 0 1px var(--color-primary);
+    }
+    
+    input:checked + .slider:before {
+      transform: translateX(26px);
+    }
+    
+    /* Fix for dark mode toggle display */
+    body.dark .switch input:checked + .slider {
+      background-color: var(--color-primary);
+    }
+    
+    /* Tools card styles */
+    .tools-card {
+      border: 2px dashed var(--color-border);
+      border-radius: 16px;
+      padding: 24px;
+      text-align: center;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+    
+    .dark .tools-card {
+      border-color: var(--dark-color-border);
+    }
+    
+    .tools-card:hover {
+      border-color: var(--color-primary);
+      background-color: rgba(131, 56, 236, 0.05);
+    }
+    
+    .dark .tools-card:hover {
+      background-color: rgba(131, 56, 236, 0.15);
+    }
+    
+    .focus-ring {
+      transition: box-shadow 0.15s ease-in-out;
+    }
+    
+    .focus-ring:focus {
+      outline: none;
+      box-shadow: 0 0 0 3px rgba(131, 56, 236, 0.1);
+    }
+    
+    /* Custom styles for better visual hierarchy */
+    h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+    
+    h2 {
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+    
+    h3 {
+      font-size: 1.125rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+    
+    .text-muted {
+      color: var(--color-text-secondary);
+    }
+    
+    .dark .text-muted {
+      color: var(--dark-color-text-secondary);
+    }
+    
+    .btn-primary {
+      background: linear-gradient(135deg, var(--color-primary), var(--color-primary-light));
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      border-radius: 12px;
+      font-weight: 500;
+      transition: all 0.2s ease;
+      cursor: pointer;
+    }
+    
+    .btn-primary:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 6px 20px rgba(131, 56, 236, 0.3);
+    }
+    
+    .btn-secondary {
+      background: rgba(131, 56, 236, 0.1);
+      color: var(--color-primary);
+      border: 1px solid rgba(131, 56, 236, 0.2);
+      padding: 8px 16px;
+      border-radius: 8px;
+      font-weight: 500;
+      transition: all 0.2s ease;
+      cursor: pointer;
+    }
+    
+    .btn-secondary:hover {
+      background: rgba(131, 56, 236, 0.15);
+    }
+    
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+      .sidebar-nav {
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 80px;
+        border-right: none;
+        border-top: 1px solid var(--color-border);
+        background-color: white;
+        z-index: 100;
+      }
+      
+      .nav-link {
+        flex-direction: column;
+        gap: 4px;
+        padding: 8px;
+        font-size: 0.75rem;
+      }
+      
+      .nav-link svg {
+        width: 18px;
+        height: 18px;
+      }
+      
+      main {
+        margin-left: 0;
+        padding-bottom: 100px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="flex min-h-screen">
+    <!-- Sidebar -->
+    <aside class="w-64 sidebar-nav">
+      <div class="p-6">
+        <div class="flex items-center gap-3 mb-8">
+          <div class="w-10 h-10 bg-gradient-to-br from-purple-600 to-purple-700 rounded-xl flex items-center justify-center">
+            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1"></path>
+            </svg>
+          </div>
+          <span class="text-xl brand-text">Howard Financial</span>
+        </div>
+        
+        <nav class="space-y-1">
+          <a href="../index.html" class="nav-link">
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+            </svg>
+            Dashboard
+          </a>
+          <a href="index.html" class="nav-link active">
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+            </svg>
+            Settings
+          </a>
+          <a href="../tools/index.html" class="nav-link">
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+            </svg>
+            Add Tool
+          </a>
+        </nav>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="flex-1 p-8 ml-64">
+      <!-- Header -->
+      <div class="mb-8">
+        <h1 class="text-3xl font-bold text-gray-900 dark:text-white">Settings</h1>
+        <p class="text-gray-600 dark:text-gray-300 mt-2">Customize your financial dashboard experience</p>
+      </div>
+
+      <div class="max-w-4xl">
+        <!-- Appearance Settings -->
+        <div class="settings-card">
+          <h2 class="text-xl font-semibold mb-6">Appearance</h2>
+          
+          <div class="mb-6">
+            <h3 class="font-medium mb-1">Theme Color</h3>
+            <p class="text-sm text-gray-500 dark:text-gray-400 mb-3">Choose your preferred color scheme</p>
+            <div class="flex gap-3">
+              <button class="w-8 h-8 rounded-full focus-ring transition-all duration-200" style="background-color: #8338ec;" title="Purple"></button>
+              <button class="w-8 h-8 rounded-full focus-ring transition-all duration-200" style="background-color: #3b82f6;" title="Blue"></button>
+              <button class="w-8 h-8 rounded-full focus-ring transition-all duration-200" style="background-color: #10b981;" title="Green"></button>
+              <button class="w-8 h-8 rounded-full focus-ring transition-all duration-200" style="background-color: #ef4444;" title="Red"></button>
+              <button class="w-8 h-8 rounded-full focus-ring transition-all duration-200" style="background-color: #f59e0b;" title="Orange"></button>
+            </div>
+          </div>
+          
+          <div>
+            <h3 class="font-medium mb-1">Font Size</h3>
+            <p class="text-sm text-gray-500 dark:text-gray-400 mb-3">Adjust text size for better readability</p>
+            <div class="flex items-center gap-4">
+              <span class="text-sm text-gray-500">Small</span>
+              <input type="range" min="1" max="3" value="2" class="flex-1 h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer slider-thumb">
+              <span class="text-sm text-gray-500">Large</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Data Management -->
+        <div class="settings-card">
+          <h2 class="text-xl font-semibold mb-6">Data Management</h2>
+          
+          <div class="mb-6">
+            <h3 class="font-medium mb-1">Import Transactions</h3>
+            <p class="text-sm text-gray-500 dark:text-gray-400 mb-3">Upload transaction data from your bank</p>
+            <label class="block">
+              <span class="sr-only">Choose file</span>
+              <input type="file" class="block w-full text-sm text-gray-500 file:mr-4 file:py-2 file:px-4 file:rounded-lg file:border-0 file:text-sm file:font-semibold file:bg-purple-50 file:text-purple-700 hover:file:bg-purple-100 dark:file:bg-gray-700 dark:file:text-gray-300"/>
+            </label>
+          </div>
+          
+          <div class="mb-6">
+            <h3 class="font-medium mb-1">Data Source</h3>
+            <p class="text-sm text-gray-500 dark:text-gray-400 mb-3">Choose your preferred data source</p>
+            <select class="w-full p-2 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 rounded-lg">
+              <option>CSV File (Current)</option>
+              <option>API Connection</option>
+              <option>Database (Requires Setup)</option>
+            </select>
+          </div>
+          
+          <div>
+            <h3 class="font-medium mb-1 text-red-600 dark:text-red-400">Danger Zone</h3>
+            <p class="text-sm text-gray-500 dark:text-gray-400 mb-3">Clear all your financial data</p>
+            <button class="px-4 py-2 bg-red-600 text-white rounded-lg hover:bg-red-700 focus-ring">Reset All Data</button>
+          </div>
+        </div>
+        
+        <!-- Account Settings -->
+        <div class="settings-card">
+          <h2 class="text-xl font-semibold mb-6">Account Settings</h2>
+          
+          <div class="mb-6">
+            <h3 class="font-medium mb-1">Notifications</h3>
+            <p class="text-sm text-gray-500 dark:text-gray-400 mb-3">Manage your notification preferences</p>
+            
+            <div class="space-y-4">
+              <div class="flex items-center justify-between">
+                <div>
+                  <span class="font-medium text-sm">Monthly Reports</span>
+                  <p class="text-xs text-gray-500 dark:text-gray-400">Receive monthly financial summaries</p>
+                </div>
+                <label class="switch">
+                  <input type="checkbox" checked>
+                  <span class="slider"></span>
+                </label>
+              </div>
+              
+              <div class="flex items-center justify-between">
+                <div>
+                  <span class="font-medium text-sm">Budget Alerts</span>
+                  <p class="text-xs text-gray-500 dark:text-gray-400">Get notified when approaching budget limits</p>
+                </div>
+                <label class="switch">
+                  <input type="checkbox">
+                  <span class="slider"></span>
+                </label>
+              </div>
+              
+              <div class="flex items-center justify-between">
+                <div>
+                  <span class="font-medium text-sm">Security Alerts</span>
+                  <p class="text-xs text-gray-500 dark:text-gray-400">Receive alerts about account security</p>
+                </div>
+                <label class="switch">
+                  <input type="checkbox" checked>
+                  <span class="slider"></span>
+                </label>
+              </div>
+            </div>
+          </div>
+          
+          <div>
+            <h3 class="font-medium mb-1">Privacy</h3>
+            <p class="text-sm text-gray-500 dark:text-gray-400 mb-3">Manage your data privacy settings</p>
+            
+            <div class="space-y-4">
+              <div class="flex items-center">
+                <input id="data-collection" type="checkbox" class="h-4 w-4 text-purple-600 focus:ring-purple-500">
+                <label for="data-collection" class="ml-2 block text-sm">
+                  Allow anonymous usage data collection to improve the service
+                </label>
+              </div>
+              
+              <div class="flex items-center">
+                <input id="third-party" type="checkbox" class="h-4 w-4 text-purple-600 focus:ring-purple-500">
+                <label for="third-party" class="ml-2 block text-sm">
+                  Share data with third-party financial services
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const body = document.body;
+      const fontSizeSlider = document.querySelector('input[type="range"]');
+      const resetDataBtn = document.querySelector('.settings-card button.bg-red-600');
+      const importFileInput = document.querySelector('input[type="file"]');
+      
+      // Remove dark mode functionality - no longer supported
+      
+      // Apply saved theme color if exists
+      const savedThemeColor = localStorage.getItem('themeColor');
+      const savedThemeColorLight = localStorage.getItem('themeColorLight');
+      const savedThemeColorDark = localStorage.getItem('themeColorDark');
+      
+      if (savedThemeColor && savedThemeColorLight && savedThemeColorDark) {
+        document.documentElement.style.setProperty('--color-primary', savedThemeColor);
+        document.documentElement.style.setProperty('--color-primary-light', savedThemeColorLight);
+        document.documentElement.style.setProperty('--color-primary-dark', savedThemeColorDark);
+        document.documentElement.style.setProperty('--shadow-color', savedThemeColor + '20');
+        
+        // Apply theme to current page
+        updatePurpleElements(savedThemeColor, savedThemeColorLight, savedThemeColorDark);
+        
+        // Find the button with the matching color and mark it as selected
+        const themeButtons = document.querySelectorAll('.settings-card button.rounded-full');
+        themeButtons.forEach(button => {
+          const style = getComputedStyle(button);
+          const buttonColor = style.backgroundColor;
+          const rgbValue = buttonColor.match(/\d+/g);
+          if (rgbValue && rgbValue.length >= 3) {
+            const buttonHex = '#' + [parseInt(rgbValue[0]), parseInt(rgbValue[1]), parseInt(rgbValue[2])].map(x => {
+              const hex = x.toString(16);
+              return hex.length === 1 ? '0' + hex : hex;
+            }).join('').toLowerCase();
+            
+            const savedColorLower = savedThemeColor.toLowerCase();
+            if (buttonHex === savedColorLower) {
+              button.classList.add('border-2', 'border-white', 'dark:border-gray-800');
+            }
+          }
+        });
+      }
+      
+      // Theme color buttons
+      const themeButtons = document.querySelectorAll('.settings-card button.rounded-full');
+      themeButtons.forEach(button => {
+        button.addEventListener('click', function() {
+          try {
+            // Remove border from all buttons
+            themeButtons.forEach(btn => {
+              btn.classList.remove('border-2');
+              btn.classList.remove('border-white');
+              btn.classList.remove('dark:border-gray-800');
+            });
+            
+            // Add border to clicked button
+            this.classList.add('border-2');
+            this.classList.add('border-white');
+            this.classList.add('dark:border-gray-800');
+            
+            // Get the background color from inline style if available (more reliable)
+            let primaryColor;
+            if (this.style.backgroundColor) {
+              const styleColor = this.style.backgroundColor;
+              // Handle different formats of color values
+              if (styleColor.startsWith('#')) {
+                primaryColor = styleColor;
+              } else if (styleColor.startsWith('rgb')) {
+                const rgbValues = styleColor.match(/\d+/g);
+                if (rgbValues && rgbValues.length >= 3) {
+                  primaryColor = rgbToHex(parseInt(rgbValues[0]), parseInt(rgbValues[1]), parseInt(rgbValues[2]));
+                }
+              }
+            }
+            
+            // Fallback to computed style if inline style is not available
+            if (!primaryColor) {
+              const computedStyle = getComputedStyle(this);
+              const backgroundColor = computedStyle.backgroundColor;
+              
+              // Parse the RGB value
+              const rgbValues = backgroundColor.match(/\d+/g);
+              if (rgbValues && rgbValues.length >= 3) {
+                primaryColor = rgbToHex(parseInt(rgbValues[0]), parseInt(rgbValues[1]), parseInt(rgbValues[2]));
+              }
+            }
+            
+            // Convert RGB to hex helper function
+            function rgbToHex(r, g, b) {
+              return '#' + [r, g, b].map(x => {
+                const hex = x.toString(16);
+                return hex.length === 1 ? '0' + hex : hex;
+              }).join('');
+            }
+            
+            // Calculate lighter and darker shades
+            const lightenDarkenColor = (color, amount) => {
+              return '#' + color.replace(/^#/, '').replace(/../g, color => ('0'+Math.min(255, Math.max(0, parseInt(color, 16) + amount)).toString(16)).substr(-2));
+            };
+            
+            const primaryLight = lightenDarkenColor(primaryColor, 30);
+            const primaryDark = lightenDarkenColor(primaryColor, -30);
+            
+            // Apply the new color theme to CSS variables
+            document.documentElement.style.setProperty('--color-primary', primaryColor);
+            document.documentElement.style.setProperty('--color-primary-light', primaryLight);
+            document.documentElement.style.setProperty('--color-primary-dark', primaryDark);
+            
+            // Update box shadows to match theme color
+            document.documentElement.style.setProperty('--shadow-color', primaryColor + '20');
+            
+            // Update all purple elements (excluding expense chart)
+            updatePurpleElements(primaryColor, primaryLight, primaryDark);
+            
+            // Save the theme to localStorage
+            localStorage.setItem('themeColor', primaryColor);
+            localStorage.setItem('themeColorLight', primaryLight);
+            localStorage.setItem('themeColorDark', primaryDark);
+          } catch (error) {
+            console.error('Error changing theme color:', error);
+          }
+        });
+      });
+      
+      // Font size adjustment
+      fontSizeSlider.addEventListener('input', function() {
+        const fontSize = this.value;
+        const htmlEl = document.documentElement;
+        
+        switch(fontSize) {
+          case '1':
+            htmlEl.style.fontSize = '14px';
+            break;
+          case '2':
+            htmlEl.style.fontSize = '16px';
+            break;
+          case '3':
+            htmlEl.style.fontSize = '18px';
+            break;
+          default:
+            htmlEl.style.fontSize = '16px';
+        }
+        
+        localStorage.setItem('fontSize', fontSize);
+      });
+      
+      // Apply saved font size if exists
+      const savedFontSize = localStorage.getItem('fontSize');
+      if (savedFontSize) {
+        fontSizeSlider.value = savedFontSize;
+        fontSizeSlider.dispatchEvent(new Event('input'));
+      }
+      
+      // Helper function to show temporary notification
+      function showSavedNotification() {
+        const notification = document.createElement('div');
+        notification.className = 'fixed top-4 right-4 bg-green-500 text-white px-4 py-2 rounded-lg shadow-lg';
+        notification.innerText = 'Preferences saved automatically!';
+        notification.style.zIndex = '1000';
+        document.body.appendChild(notification);
+        
+        setTimeout(() => {
+          notification.remove();
+        }, 2000);
+      }
+      
+      // Handle privacy settings
+      const dataCollection = document.getElementById('data-collection');
+      const thirdParty = document.getElementById('third-party');
+      if (dataCollection && thirdParty) {
+        // Load saved preferences
+        dataCollection.checked = localStorage.getItem('dataCollection') === 'true';
+        thirdParty.checked = localStorage.getItem('thirdParty') === 'true';
+        
+        // Set up auto-save for privacy settings
+        dataCollection.addEventListener('change', function() {
+          localStorage.setItem('dataCollection', this.checked);
+          showSavedNotification();
+        });
+        
+        thirdParty.addEventListener('change', function() {
+          localStorage.setItem('thirdParty', this.checked);
+          showSavedNotification();
+        });
+      }
+      
+      // Reset data button
+      resetDataBtn.addEventListener('click', function() {
+        if (confirm('Are you sure you want to reset all your financial data? This action cannot be undone.')) {
+          const notification = document.createElement('div');
+          notification.className = 'fixed top-4 right-4 bg-red-500 text-white px-4 py-2 rounded-lg shadow-lg';
+          notification.innerText = 'All data has been reset!';
+          notification.style.zIndex = '1000';
+          document.body.appendChild(notification);
+          
+          setTimeout(() => {
+            notification.remove();
+          }, 3000);
+          
+          // Clear data in localStorage
+          localStorage.removeItem('transactionData');
+          
+          // Could also clear other data storage here
+        }
+      });
+      
+      // File import handling
+      importFileInput.addEventListener('change', function() {
+        if (this.files.length > 0) {
+          const file = this.files[0];
+          const notification = document.createElement('div');
+          notification.className = 'fixed top-4 right-4 bg-blue-500 text-white px-4 py-2 rounded-lg shadow-lg';
+          notification.innerText = `File "${file.name}" selected for import`;
+          notification.style.zIndex = '1000';
+          document.body.appendChild(notification);
+          
+          setTimeout(() => {
+            notification.remove();
+          }, 3000);
+          
+          // Would handle file parsing and data import here
+        }
+      });
+      
+      function updatePurpleElements(primaryColor, primaryLight, primaryDark) {
+        // Update background gradients
+        const gradientElements = document.querySelectorAll('.bg-gradient-to-br');
+        gradientElements.forEach(el => {
+          if (el.classList.contains('from-purple-600')) {
+            el.style.background = `linear-gradient(to bottom right, ${primaryColor}, ${primaryDark})`;
+          }
+        });
+        
+        // Update purple backgrounds except for expense chart related elements
+        const purpleElements = document.querySelectorAll('[class*="bg-purple"]:not([id*="expense"]):not([class*="chart"])');
+        purpleElements.forEach(el => {
+          const classList = Array.from(el.classList);
+          classList.forEach(className => {
+            if (className.includes('bg-purple-50')) {
+              el.style.backgroundColor = primaryColor + '10';
+            } else if (className.includes('bg-purple-100')) {
+              el.style.backgroundColor = primaryColor + '20';
+            } else if (className.includes('bg-purple-600')) {
+              el.style.backgroundColor = primaryColor;
+            } else if (className.includes('bg-purple-700')) {
+              el.style.backgroundColor = primaryDark;
+            }
+          });
+        });
+        
+        // Update purple text colors
+        const purpleTextElements = document.querySelectorAll('[class*="text-purple"]');
+        purpleTextElements.forEach(el => {
+          const classList = Array.from(el.classList);
+          classList.forEach(className => {
+            if (className.includes('text-purple-600')) {
+              el.style.color = primaryColor;
+            } else if (className.includes('text-purple-700')) {
+              el.style.color = primaryDark;
+            } else if (className.includes('text-purple-800')) {
+              el.style.color = primaryDark;
+            }
+          });
+        });
+        
+        // Update purple borders
+        const purpleBorderElements = document.querySelectorAll('[class*="border-purple"]');
+        purpleBorderElements.forEach(el => {
+          const classList = Array.from(el.classList);
+          classList.forEach(className => {
+            if (className.includes('border-purple-200')) {
+              el.style.borderColor = primaryColor + '40';
+            } else if (className.includes('border-purple-600')) {
+              el.style.borderColor = primaryColor;
+            } else if (className.includes('border-purple-700')) {
+              el.style.borderColor = primaryDark;
+            }
+          });
+        });
+        
+        // Update semi-transparent purple backgrounds
+        const semiTransparentElements = document.querySelectorAll('[style*="rgba(131, 56, 236"]');
+        semiTransparentElements.forEach(el => {
+          const style = el.getAttribute('style');
+          if (style && style.includes('rgba(131, 56, 236')) {
+            const updatedStyle = style.replace(/rgba\(131, 56, 236, ([0-9.]+)\)/g, (match, opacity) => {
+              const rgb = hexToRgb(primaryColor);
+              return `rgba(${rgb.r}, ${rgb.g}, ${rgb.b}, ${opacity})`;
+            });
+            el.setAttribute('style', updatedStyle);
+          }
+        });
+      }
+      
+      function hexToRgb(hex) {
+        const result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
+        return result ? {
+          r: parseInt(result[1], 16),
+          g: parseInt(result[2], 16),
+          b: parseInt(result[3], 16)
+        } : null;
+      }
+    });
+  </script>
+</body>
+</html>

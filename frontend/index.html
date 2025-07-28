@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dashboard | Howard Financial</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      font-family: 'Inter', sans-serif;
+    }
+    
+    .gradient-bg {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    }
+    
+    .card-hover {
+      transition: all 0.3s ease;
+    }
+    
+    .card-hover:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    }
+    
+    .metric-card {
+      background: white;
+      border-radius: 16px;
+      padding: 24px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    
+    .sidebar-nav {
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(10px);
+      border-right: 1px solid rgba(0, 0, 0, 0.05);
+    }
+    
+    .trend-indicator {
+      display: inline-flex;
+      align-items: center;
+      padding: 4px 8px;
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: 500;
+      margin-left: 8px;
+    }
+    
+    .trend-up {
+      background: rgba(34, 197, 94, 0.1);
+      color: #059669;
+    }
+    
+    .trend-down {
+      background: rgba(239, 68, 68, 0.1);
+      color: #dc2626;
+    }
+    
+    .loading-skeleton {
+      background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+      background-size: 200% 100%;
+      animation: loading 1.5s infinite;
+    }
+    
+    @keyframes loading {
+      0% { background-position: 200% 0; }
+      100% { background-position: -200% 0; }
+    }
+    
+    .chart-container {
+      position: relative;
+      height: 400px;
+      background: white;
+      border-radius: 16px;
+      padding: 24px 24px 40px; /* Extended bottom padding for x-axis labels */
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+      margin-bottom: 40px; /* Added margin to ensure space for labels */
+    }
+    
+    .table-container {
+      background: white;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    }
+    
+    .table-header {
+      background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+      padding: 20px 24px;
+      border-bottom: 1px solid #e2e8f0;
+    }
+    
+    .transaction-row {
+      transition: background-color 0.2s ease;
+      border-bottom: 1px solid #f1f5f9;
+    }
+    
+    .transaction-row:hover {
+      background-color: #f8fafc;
+    }
+    
+    .amount-positive {
+      color: #059669;
+      font-weight: 600;
+    }
+    
+    .amount-negative {
+      color: #dc2626;
+      font-weight: 600;
+    }
+    
+    .amount-neutral {
+      color: #3b82f6;
+      font-weight: 600;
+    }
+    
+    .category-tag {
+      display: inline-block;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: 500;
+      background: #f1f5f9;
+      color: #475569;
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-900">
+  <div class="flex min-h-screen">
+    <!-- Enhanced Sidebar -->
+    <aside class="w-64 sidebar-nav">
+      <div class="p-6">
+        <div class="bg-white text-blue-600 p-4 rounded-xl mb-6 border border-gray-200">
+          <h1 class="text-xl font-bold">Howard Financial</h1>
+        </div>
+        <nav class="space-y-2">
+          <a href="#" class="flex items-center p-3 text-gray-700 bg-blue-50 rounded-lg font-medium">
+            <span class="w-2 h-2 bg-blue-500 rounded-full mr-3"></span>
+            Dashboard
+          </a>
+          <a href="#" class="flex items-center p-3 text-gray-600 hover:bg-gray-50 rounded-lg transition-colors">
+            <span class="w-2 h-2 bg-gray-300 rounded-full mr-3"></span>
+            Reports
+          </a>
+          <a href="#" class="flex items-center p-3 text-gray-600 hover:bg-gray-50 rounded-lg transition-colors">
+            <span class="w-2 h-2 bg-gray-300 rounded-full mr-3"></span>
+            Settings
+          </a>
+        </nav>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="flex-1 p-8">
+      <!-- Header -->
+      <div class="mb-8">
+        <h1 class="text-3xl font-bold text-gray-900 mb-2">Financial Overview</h1>
+      </div>
+
+      <!-- Metrics Cards -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+        <div class="metric-card card-hover">
+          <div class="flex items-center justify-between mb-4">
+            <h2 class="text-sm font-medium text-gray-600 uppercase tracking-wide">Total Income</h2>
+            <div class="w-8 h-8 bg-green-100 rounded-lg flex items-center justify-center">
+              <svg class="w-4 h-4 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 11l5-5m0 0l5 5m-5-5v12"></path>
+              </svg>
+            </div>
+          </div>
+          <p id="incomeTotal" class="text-3xl font-bold text-green-600 mb-2">$0.00</p>
+          <span id="incomeTrend" class="trend-indicator trend-up">+12.5%</span>
+        </div>
+
+        <div class="metric-card card-hover">
+          <div class="flex items-center justify-between mb-4">
+            <h2 class="text-sm font-medium text-gray-600 uppercase tracking-wide">Total Expenses</h2>
+            <div class="w-8 h-8 bg-red-100 rounded-lg flex items-center justify-center">
+              <svg class="w-4 h-4 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 13l-5 5m0 0l-5-5m5 5V6"></path>
+              </svg>
+            </div>
+          </div>
+          <p id="expenseTotal" class="text-3xl font-bold text-red-600 mb-2">$0.00</p>
+          <span id="expenseTrend" class="trend-indicator trend-down">-3.2%</span>
+        </div>
+
+        <div class="metric-card card-hover">
+          <div class="flex items-center justify-between mb-4">
+            <h2 class="text-sm font-medium text-gray-600 uppercase tracking-wide">Net Balance</h2>
+            <div class="w-8 h-8 bg-blue-100 rounded-lg flex items-center justify-center">
+              <svg class="w-4 h-4 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1"></path>
+              </svg>
+            </div>
+          </div>
+          <p id="netBalance" class="text-3xl font-bold text-blue-600 mb-2">$0.00</p>
+          <span id="balanceTrend" class="trend-indicator trend-up">+8.7%</span>
+        </div>
+      </div>
+
+      <!-- Chart Section -->
+      <div class="chart-container mb-8">
+        <div class="flex items-center justify-between mb-6">
+          <h2 class="text-xl font-semibold text-gray-900">Financial Trends</h2>
+          <div class="flex space-x-2">
+            <button class="px-4 py-2 text-sm bg-blue-100 text-blue-700 rounded-lg font-medium">7D</button>
+            <button class="px-4 py-2 text-sm text-gray-500 hover:bg-gray-100 rounded-lg font-medium">30D</button>
+            <button class="px-4 py-2 text-sm text-gray-500 hover:bg-gray-100 rounded-lg font-medium">90D</button>
+          </div>
+        </div>
+        <canvas id="financeChart"></canvas>
+      </div>
+
+      <!-- Transactions Table -->
+      <div class="table-container">
+        <div class="table-header">
+          <h2 class="text-xl font-semibold text-gray-900">Recent Transactions</h2>
+        </div>
+        <div class="overflow-x-auto">
+          <table class="min-w-full">
+            <thead class="bg-gray-50">
+              <tr>
+                <th class="px-6 py-4 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Date</th>
+                <th class="px-6 py-4 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Type</th>
+                <th class="px-6 py-4 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Category</th>
+                <th class="px-6 py-4 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Amount</th>
+                <th class="px-6 py-4 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Vendor</th>
+                <th class="px-6 py-4 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Running Total</th>
+              </tr>
+            </thead>
+            <tbody id="transactionTable" class="bg-white divide-y divide-gray-200">
+              <!-- Loading skeleton -->
+              <tr class="transaction-row">
+                <td class="px-6 py-4"><div class="h-4 loading-skeleton rounded"></div></td>
+                <td class="px-6 py-4"><div class="h-4 loading-skeleton rounded"></div></td>
+                <td class="px-6 py-4"><div class="h-4 loading-skeleton rounded"></div></td>
+                <td class="px-6 py-4"><div class="h-4 loading-skeleton rounded"></div></td>
+                <td class="px-6 py-4"><div class="h-4 loading-skeleton rounded"></div></td>
+                <td class="px-6 py-4"><div class="h-4 loading-skeleton rounded"></div></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script>
+    // Configuration for data source
+    const CONFIG = {
+      dataSource: 'database', // 'database' or 'csv'
+      apiBaseUrl: '/api/v1', // FastAPI backend URL
+      csvFile: 'as36kgrl25.csv' // Fallback CSV file
+    };
+
+    function parseAmount(v) {
+      if (!v) return 0;
+      return parseFloat(v.replace(/[$,()]/g, '').replace('(', '-')) || 0;
+    }
+
+    function formatCurrency(amount) {
+      return new Intl.NumberFormat('en-US', {
+        style: 'currency',
+        currency: 'USD'
+      }).format(amount);
+    }
+
+    function formatDate(dateStr) {
+      const date = new Date(dateStr);
+      return date.toLocaleDateString('en-US', {
+        month: 'short',
+        day: 'numeric',
+        year: 'numeric'
+      });
+    }
+
+    function getCategoryColor(category) {
+      const colors = {
+        'Financial Aid': '#10b981',
+        'Rent': '#f59e0b',
+        'Food': '#ef4444',
+        'Transportation': '#3b82f6',
+        'Subscription': '#8b5cf6',
+        'Parking': '#06b6d4',
+        'Phone': '#84cc16',
+        'Clothing': '#ec4899',
+        'Job': '#10b981',
+        'Lodging': '#f97316'
+      };
+      return colors[category] || '#6b7280';
+    }
+
+    async function loadTransactionData() {
+      if (CONFIG.dataSource === 'database') {
+        try {
+          // Fetch from FastAPI backend
+          const response = await fetch(`${CONFIG.apiBaseUrl}/transactions`);
+          if (!response.ok) {
+            throw new Error('Failed to fetch from database');
+          }
+          const data = await response.json();
+          processTransactionData(data.transactions);
+        } catch (error) {
+          console.error('Database fetch failed, falling back to CSV:', error);
+          loadFromCSV();
+        }
+      } else {
+        loadFromCSV();
+      }
+    }
+
+    function loadFromCSV() {
+      Papa.parse(CONFIG.csvFile, {
+        download: true,
+        header: true,
+        complete: function(results) {
+          const data = results.data
+            .filter(r => r.Date && r.Type && r.Type.toLowerCase() !== 'transfer')
+            .sort((a, b) => new Date(a.Date) - new Date(b.Date));
+          processTransactionData(data);
+        },
+        error: function(error) {
+          console.error("Error loading CSV:", error);
+          document.getElementById("transactionTable").innerHTML = 
+            '<tr><td colspan="6" class="px-6 py-8 text-center text-gray-500">Error loading transaction data</td></tr>';
+        }
+      });
+    }
+
+    function processTransactionData(data) {
+      const dailyMap = {};
+      let totalIncome = 0, totalExpense = 0;
+      const tbody = document.getElementById("transactionTable");
+      tbody.innerHTML = ''; // Clear loading skeleton
+
+      data.forEach(r => {
+        const date = r.Date;
+        const type = r.Type.toLowerCase();
+        const amt = parseAmount(r.Dollars);
+        const cat = r.Category || 'Uncategorized';
+        const vend = r.Vendor || '';
+        const run = (parseFloat(r["USAA S"])||0) + (parseFloat(r["USAA C"])||0);
+
+        if (!dailyMap[date]) {
+          dailyMap[date] = { transactions: [], categories: {}, running: 0 };
+        }
+        dailyMap[date].transactions.push({ type, amt, cat });
+        dailyMap[date].running = run;
+        dailyMap[date].categories[cat] = (dailyMap[date].categories[cat]||0) + amt;
+
+        if (type === 'income') totalIncome += amt;
+        if (type === 'expense') totalExpense += Math.abs(amt);
+
+        const tr = document.createElement("tr");
+        tr.classList.add("transaction-row");
+        
+        let amountClass = 'amount-neutral';
+        let typeClass = 'amount-neutral';
+        let amountPrefix = '';
+        if (type === 'income') {
+          amountClass = 'amount-positive';
+          typeClass = 'amount-positive';
+          amountPrefix = '+';
+        } else if (type === 'expense') {
+          amountClass = 'amount-negative';
+          typeClass = 'amount-negative';
+          amountPrefix = '-';
+        } else if (type === 'reimbursement') {
+          amountClass = 'amount-neutral';
+          typeClass = 'amount-neutral';
+          amountPrefix = '+';
+        }
+
+        tr.innerHTML = `
+          <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">${formatDate(date)}</td>
+          <td class="px-6 py-4 whitespace-nowrap">
+            <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium ${typeClass}" style="background-color: ${type === 'income' ? '#10b98120' : type === 'expense' ? '#ef444420' : '#3b82f620'};">
+              ${r.Type}
+            </span>
+          </td>
+          <td class="px-6 py-4 whitespace-nowrap">
+            <span class="category-tag">${cat}</span>
+          </td>
+          <td class="px-6 py-4 whitespace-nowrap text-sm ${amountClass}">
+            ${amountPrefix}${formatCurrency(Math.abs(amt))}
+          </td>
+          <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">${vend}</td>
+          <td class="px-6 py-4 whitespace-nowrap text-sm amount-neutral">${formatCurrency(run)}</td>
+        `;
+        tbody.appendChild(tr);
+      });
+
+      // Update summary cards
+      document.getElementById("incomeTotal").innerText = formatCurrency(totalIncome);
+      document.getElementById("expenseTotal").innerText = formatCurrency(totalExpense);
+      const last = data[data.length-1];
+      const net = (parseFloat(last["USAA S"])||0) + (parseFloat(last["USAA C"])||0);
+      document.getElementById("netBalance").innerText = formatCurrency(net);
+
+      // Prepare chart data
+      const labels = Object.keys(dailyMap);
+      const incomeArr = [], expenseArr = [], runningArr = [], details = [];
+
+      labels.forEach(date => {
+        const day = dailyMap[date];
+        let dInc = 0, dExp = 0;
+        day.transactions.forEach(t => {
+          if (t.type==='income') dInc += t.amt;
+          if (t.type==='expense') dExp += Math.abs(t.amt);
+        });
+        incomeArr.push(dInc);
+        expenseArr.push(dExp);
+        runningArr.push(day.running);
+        details.push(day);
+      });
+
+      // Enhanced Chart
+      new Chart(document.getElementById("financeChart").getContext("2d"), {
+        type: 'line',
+        data: {
+          labels: labels.map(date => formatDate(date)),
+          datasets: [
+            { 
+              data: incomeArr,  
+              borderColor: '#10b981', 
+              backgroundColor: 'rgba(16, 185, 129, 0.1)',
+              label: 'Income',       
+              fill: true,
+              tension: 0.4,
+              borderWidth: 3,
+              pointBackgroundColor: '#10b981',
+              pointBorderColor: '#ffffff',
+              pointBorderWidth: 2,
+              pointRadius: 5,
+              pointHoverRadius: 7
+            },
+            { 
+              data: expenseArr, 
+              borderColor: '#ef4444', 
+              backgroundColor: 'rgba(239, 68, 68, 0.1)',
+              label: 'Expenses',     
+              fill: true,
+              tension: 0.4,
+              borderWidth: 3,
+              pointBackgroundColor: '#ef4444',
+              pointBorderColor: '#ffffff',
+              pointBorderWidth: 2,
+              pointRadius: 5,
+              pointHoverRadius: 7
+            },
+            { 
+              data: runningArr, 
+              borderColor: '#3b82f6', 
+              backgroundColor: 'rgba(59, 130, 246, 0.1)',
+              label: 'Balance', 
+              fill: true,
+              tension: 0.4,
+              borderWidth: 3,
+              pointBackgroundColor: '#3b82f6',
+              pointBorderColor: '#ffffff',
+              pointBorderWidth: 2,
+              pointRadius: 5,
+              pointHoverRadius: 7
+            }
+          ]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          interaction: {
+            intersect: false,
+            mode: 'index'
+          },
+          plugins: {
+            legend: { 
+              display: true,
+              position: 'top',
+              labels: {
+                usePointStyle: true,
+                pointStyle: 'circle',
+                padding: 20,
+                font: {
+                  size: 12,
+                  weight: '500'
+                }
+              }
+            },
+            tooltip: {
+              backgroundColor: 'rgba(0, 0, 0, 0.8)',
+              titleColor: '#ffffff',
+              bodyColor: '#ffffff',
+              borderColor: 'rgba(255, 255, 255, 0.1)',
+              borderWidth: 1,
+              cornerRadius: 8,
+              displayColors: true,
+              callbacks: {
+                title: items => `Date: ${items[0].label}`,
+                label: function(context) {
+                  return `${context.dataset.label}: ${formatCurrency(context.parsed.y)}`;
+                },
+                afterBody: items => {
+                  const idx = items[0].dataIndex;
+                  const day = details[idx];
+                  const breakdown = Object.entries(day.categories)
+                    .map(([c,v]) => `• ${c}: ${formatCurrency(Math.abs(v))}`);
+                  return ['', 'Category Breakdown:', ...breakdown];
+                }
+              }
+            }
+          },
+          scales: {
+            x: {
+              grid: {
+                display: false
+              },
+              ticks: {
+                font: {
+                  size: 11
+                },
+                color: '#6b7280'
+              }
+            },
+            y: {
+              beginAtZero: true,
+              grid: {
+                color: 'rgba(0, 0, 0, 0.05)'
+              },
+              ticks: {
+                font: {
+                  size: 11
+                },
+                color: '#6b7280',
+                callback: function(value) {
+                  return formatCurrency(value);
+                }
+              }
+            }
+          }
+        }
+      });
+    }
+
+    // Initialize dashboard
+    document.addEventListener('DOMContentLoaded', loadTransactionData);
+  </script>
+</body>
+</html>

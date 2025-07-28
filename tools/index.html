@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Create Tool | Howard Financial</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --color-primary: #8338ec;
+      --color-primary-light: #9c5ff2;
+      --color-primary-dark: #6d1dd9;
+      --color-secondary: #0A8754;
+      --color-secondary-light: #10A76A;
+      --color-secondary-dark: #076B42;
+      --color-accent: #F28D35;
+      --color-accent-light: #F6A25C;
+      --color-accent-dark: #D77621;
+      --color-error: #D64045;
+      --color-error-light: #E06367;
+      --color-error-dark: #B83035;
+      --color-neutral: #3F88C5;
+      --color-neutral-light: #5E9DD1;
+      --color-neutral-dark: #2D6EA8;
+      --color-withdrawal: #9C27B0;
+      --color-withdrawal-light: #BA68C8;
+      --color-withdrawal-dark: #7B1FA2;
+      --color-background: #F6F8FA;
+      --color-surface: #FFFFFF;
+      --color-text-primary: #2C3E50;
+      --color-text-secondary: #546E7A;
+      --color-text-tertiary: #90A4AE;
+      --color-border: #E1E8ED;
+      
+      /* Dark mode colors */
+      --dark-color-background: #121212;
+      --dark-color-surface: #1E1E1E;
+      --dark-color-text-primary: #FFFFFF;
+      --dark-color-text-secondary: #B0B0B0;
+      --dark-color-text-tertiary: #777777;
+      --dark-color-border: #333333;
+    }
+    
+    * {
+      font-family: 'Inter', sans-serif;
+    }
+    
+    body {
+      background-color: var(--color-background);
+      color: var(--color-text-primary);
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+    
+    body.dark {
+      background-color: var(--dark-color-background);
+      color: var(--dark-color-text-primary);
+    }
+    
+    .gradient-bg {
+      background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+    }
+    
+    .sidebar-nav {
+      background: var(--color-surface);
+      border-right: 1px solid var(--color-border);
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.03);
+      transition: background-color 0.3s ease, border-color 0.3s ease;
+    }
+    
+    .dark .sidebar-nav {
+      background: var(--dark-color-surface);
+      border-color: var(--dark-color-border);
+    }
+    
+    .sidebar-logo {
+      background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+      color: white;
+      border-radius: 12px;
+      padding: 16px;
+      margin-bottom: 24px;
+    }
+    
+    .nav-link {
+      display: flex;
+      align-items: center;
+      padding: 12px 16px;
+      border-radius: 8px;
+      color: var(--color-text-secondary);
+      font-weight: 500;
+      transition: all 0.2s ease;
+      margin-bottom: 4px;
+    }
+    
+    .dark .nav-link {
+      color: var(--dark-color-text-secondary);
+    }
+    
+    .nav-link:hover {
+      background-color: rgba(131, 56, 236, 0.08);
+      color: var(--color-primary);
+    }
+    
+    .dark .nav-link:hover {
+      background-color: rgba(131, 56, 236, 0.2);
+      color: var(--color-primary-light);
+    }
+    
+    .nav-link.active {
+      background-color: rgba(131, 56, 236, 0.12);
+      color: var(--color-primary);
+    }
+    
+    .dark .nav-link.active {
+      background-color: rgba(131, 56, 236, 0.3);
+      color: var(--color-primary-light);
+    }
+    
+    .nav-link .icon {
+      width: 20px;
+      height: 20px;
+      margin-right: 12px;
+    }
+    
+    .chat-container {
+      background: var(--color-surface);
+      border-radius: 16px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+      border: 1px solid var(--color-border);
+      transition: background-color 0.3s ease, border-color 0.3s ease;
+      height: 500px;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .dark .chat-container {
+      background: var(--dark-color-surface);
+      border-color: var(--dark-color-border);
+    }
+    
+    .chat-header {
+      padding: 16px 24px;
+      border-bottom: 1px solid var(--color-border);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    
+    .dark .chat-header {
+      border-color: var(--dark-color-border);
+    }
+    
+    .chat-messages {
+      flex: 1;
+      overflow-y: auto;
+      padding: 16px 24px;
+    }
+    
+    .chat-input {
+      padding: 16px 24px;
+      border-top: 1px solid var(--color-border);
+      display: flex;
+      align-items: center;
+    }
+    
+    .dark .chat-input {
+      border-color: var(--dark-color-border);
+    }
+    
+    .message {
+      margin-bottom: 16px;
+      max-width: 80%;
+      padding: 12px 16px;
+      border-radius: 12px;
+    }
+    
+    .message-system {
+      background-color: rgba(131, 56, 236, 0.1);
+      color: var(--color-primary);
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+    }
+    
+    .dark .message-system {
+      background-color: rgba(131, 56, 236, 0.2);
+      color: var(--color-primary-light);
+    }
+    
+    .input-box {
+      flex: 1;
+      padding: 12px 16px;
+      border-radius: 24px;
+      border: 1px solid var(--color-border);
+      background-color: var(--color-background);
+      color: var(--color-text-primary);
+      transition: all 0.3s ease;
+    }
+    
+    .dark .input-box {
+      background-color: var(--dark-color-background);
+      border-color: var(--dark-color-border);
+      color: var(--dark-color-text-primary);
+    }
+    
+    .input-box:focus {
+      outline: none;
+      border-color: var(--color-primary);
+      box-shadow: 0 0 0 2px rgba(131, 56, 236, 0.2);
+    }
+    
+    .send-button {
+      background-color: var(--color-primary);
+      color: white;
+      border: none;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-left: 12px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    
+    .send-button:hover {
+      background-color: var(--color-primary-light);
+    }
+    
+    .send-button:active {
+      background-color: var(--color-primary-dark);
+    }
+    
+    /* Visually hidden text */
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border-width: 0;
+    }
+    
+    /* Responsive */
+    @media (max-width: 768px) {
+      .sidebar-nav {
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        z-index: 100;
+        border-right: none;
+        border-top: 1px solid var(--color-border);
+        height: auto;
+        background-color: white;
+      }
+      
+      .dark .sidebar-nav {
+        background-color: var(--dark-color-surface);
+        border-top-color: var(--dark-color-border);
+      }
+      
+      .sidebar-nav .p-6 {
+        padding: 12px;
+      }
+      
+      .sidebar-logo {
+        display: none;
+      }
+      
+      .sidebar-nav nav {
+        display: flex;
+        justify-content: space-around;
+        padding: 0;
+      }
+      
+      .nav-link {
+        flex-direction: column;
+        padding: 12px 8px;
+        margin: 0;
+        font-size: 12px;
+        min-width: 70px;
+        text-align: center;
+      }
+      
+      .nav-link .icon {
+        margin: 0 auto 4px;
+        width: 24px;
+        height: 24px;
+      }
+      
+      main {
+        margin-bottom: 80px;
+        padding: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Skip to content link for screen readers -->
+  <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:px-4 focus:py-2 focus:bg-white focus:text-primary focus:outline-none focus:ring-2 focus:ring-primary">
+    Skip to main content
+  </a>
+
+  <div class="flex min-h-screen">
+    <!-- Sidebar -->
+    <aside class="w-64 sidebar-nav" role="navigation" aria-label="Main navigation">
+      <div class="p-6">
+        <div class="sidebar-logo" role="banner">
+          <h1 class="text-xl font-bold">Howard Financial</h1>
+        </div>
+        <nav class="space-y-1" aria-label="Main menu">
+          <a href="../index.html" class="nav-link">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+              <rect x="3" y="3" width="7" height="7"></rect>
+              <rect x="14" y="3" width="7" height="7"></rect>
+              <rect x="14" y="14" width="7" height="7"></rect>
+              <rect x="3" y="14" width="7" height="7"></rect>
+            </svg>
+            <span>Dashboard</span>
+          </a>
+          <a href="../settings/index.html" class="nav-link">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+              <circle cx="12" cy="12" r="3"></circle>
+              <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2a2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+            </svg>
+            <span>Settings</span>
+          </a>
+          <a href="./index.html" class="nav-link active" aria-current="page">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+              <line x1="12" y1="5" x2="12" y2="19"></line>
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+            </svg>
+            <span>Add Tool</span>
+          </a>
+        </nav>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="flex-1 p-8" id="main-content" tabindex="-1">
+      <!-- Header -->
+      <header class="mb-8" role="banner">
+        <h1 class="text-3xl font-bold mb-2">Create Custom Financial Tool</h1>
+        <p class="text-sm text-gray-500 dark:text-gray-400">Build your own analysis tools with AI assistance</p>
+      </header>
+
+      <!-- Tool Creation Interface -->
+      <div class="grid grid-cols-1 gap-8">
+        <!-- AI Chat Interface -->
+        <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden">
+          <div class="chat-container">
+            <div class="chat-header">
+              <h2 class="font-semibold">AI Assistant</h2>
+              <div class="text-sm text-gray-500 dark:text-gray-400">Ready to help</div>
+            </div>
+            
+            <div class="chat-messages" id="chat-messages">
+              <div class="message message-system">
+                <p>This feature will connect to the FastAPI backend and AI functionality in the future.</p>
+                <p class="text-sm mt-1">For now, you can type messages to see the interface working.</p>
+              </div>
+            </div>
+            
+            <div class="chat-input">
+              <input type="text" id="chat-input" class="input-box" placeholder="Describe the financial tool you want to create..." aria-label="Type a message">
+              <button type="button" id="send-button" class="send-button" aria-label="Send message">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Tool Templates -->
+        <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6">
+          <h2 class="text-xl font-semibold mb-4">Popular Tool Templates</h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <div class="border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-purple-500 dark:hover:border-purple-400 cursor-pointer transition-all">
+              <h3 class="font-medium mb-2">Expense Forecaster</h3>
+              <p class="text-sm text-gray-500 dark:text-gray-400">Predict future expenses based on historical data</p>
+            </div>
+            <div class="border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-purple-500 dark:hover:border-purple-400 cursor-pointer transition-all">
+              <h3 class="font-medium mb-2">Budget Analyzer</h3>
+              <p class="text-sm text-gray-500 dark:text-gray-400">Compare actual spending against your budget</p>
+            </div>
+            <div class="border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:border-purple-500 dark:hover:border-purple-400 cursor-pointer transition-all">
+              <h3 class="font-medium mb-2">Investment Tracker</h3>
+              <p class="text-sm text-gray-500 dark:text-gray-400">Monitor performance of various investments</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const chatInput = document.getElementById('chat-input');
+      const sendButton = document.getElementById('send-button');
+      const chatMessages = document.getElementById('chat-messages');
+      
+      // Check for dark mode
+      const savedDarkMode = localStorage.getItem('darkMode');
+      if (savedDarkMode === 'true') {
+        document.body.classList.add('dark');
+      }
+      
+      // Function to add a message to the chat
+      function addMessage(content, type) {
+        const messageDiv = document.createElement('div');
+        messageDiv.className = `message ${type === 'user' ? 'ml-auto bg-purple-100 dark:bg-purple-900 dark:text-white' : 'mr-auto bg-gray-100 dark:bg-gray-700 dark:text-white'}`;
+        messageDiv.innerText = content;
+        chatMessages.appendChild(messageDiv);
+        
+        // Scroll to bottom
+        chatMessages.scrollTop = chatMessages.scrollHeight;
+      }
+      
+      // Send message function
+      function sendMessage() {
+        const message = chatInput.value.trim();
+        if (message) {
+          // Add user message
+          addMessage(message, 'user');
+          
+          // Clear input
+          chatInput.value = '';
+          
+          // Simulate AI response after a short delay
+          setTimeout(() => {
+            const responses = [
+              "I can help you create that tool. Let's start by defining what data you want to analyze.",
+              "That's an interesting financial tool idea. What specific metrics are you looking to track?",
+              "I'll prepare a template for this tool. What time period would you like it to cover?",
+              "This tool would be perfect with our FastAPI backend. We'll implement it in a future update.",
+              "Great idea! This would work well with AI-powered financial analysis.",
+            ];
+            
+            // Choose a random response
+            const aiResponse = responses[Math.floor(Math.random() * responses.length)];
+            addMessage(aiResponse, 'ai');
+          }, 1000);
+        }
+      }
+      
+      // Event listeners
+      sendButton.addEventListener('click', sendMessage);
+      
+      chatInput.addEventListener('keypress', function(e) {
+        if (e.key === 'Enter') {
+          sendMessage();
+        }
+      });
+    });
+  </script>
+</body>
+</html>
